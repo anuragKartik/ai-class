@@ -1,0 +1,214 @@
+{
+  "program": {
+    "title": "Forward Deployed Engineer (FDE) Program",
+    "blurb": "Understand the FDE role, follow a month-by-month plan, build the right projects and walk into every interview round prepared.",
+    "credit": "Career roadmap and interview breakdown adapted from the FDE Complete Career Roadmap 2026 by @hemant_careerbytes. The 6-month plan is from your own FDE_6_Month_Roadmap document."
+  },
+  "overview": {
+    "what": "A Forward Deployed Engineer works directly with the client in the field. Instead of building a generic product from the company office, you go into the client's real environment and solve their specific problem. Palantir popularised the role, and OpenAI, Anthropic, Scale AI and many enterprise SaaS companies now hire for it. Think of it as a hybrid: part software engineer, part consultant, part product person.",
+    "daily": [
+      "Visit the client site or join remote calls to understand their real problem",
+      "Analyse the client's data, systems and workflows",
+      "Build fast prototypes - sometimes in a single day",
+      "Write backend APIs, data pipelines and integrations",
+      "Give the product team real-world feedback so the product improves",
+      "Demo to client stakeholders and answer their questions"
+    ],
+    "compare": {
+      "columns": ["", "FDE", "Software Engineer", "Solutions Engineer"],
+      "rows": [
+        ["Client interaction", "Very high, direct", "Low or none", "High, mostly sales support"],
+        ["Coding depth", "Medium-high, ships fast", "High, deep systems", "Low-medium"],
+        ["Location", "Client site / on the ground", "Company office or remote", "Mostly remote / office"],
+        ["Focus", "Real-world problem solving", "Building the product", "Sales enablement"],
+        ["Travel", "More (client visits)", "Little", "Medium"]
+      ]
+    },
+    "why": [
+      { "title": "High impact", "text": "Your code directly solves a real client's production problem, so the feedback loop is very fast." },
+      { "title": "High pay", "text": "FDE roles usually pay top-tier packages because the hybrid skill set is rare." },
+      { "title": "Fast growth", "text": "Client-facing, business and technical skills all grow together." },
+      { "title": "Diverse exposure", "text": "Every client is a new domain: healthcare, defence, finance, logistics and more." },
+      { "title": "Career flexibility", "text": "Paths open up to Product Manager, Solutions Architect, Founder or Engineering Manager." }
+    ],
+    "companies": [
+      "Palantir (pioneer of the role)",
+      "OpenAI",
+      "Anthropic",
+      "Scale AI",
+      "Databricks (Forward Deployed / Field Engineering)",
+      "Snowflake (Professional Services / Field Engineering)",
+      "Enterprise SaaS startups (fintech, healthtech, defence-tech)",
+      "Indian startups hiring as \"Deployment Engineer\" / \"Implementation Engineer\""
+    ],
+    "salary": {
+      "title": "Approximate salary in India (2026)",
+      "rows": [
+        ["Fresher / 0-1 yr", "6 - 12 LPA"],
+        ["1-3 yrs", "12 - 25 LPA"],
+        ["3-6 yrs", "25 - 50 LPA"],
+        ["6+ yrs / Senior FDE", "50 LPA - 1 Cr+ (top companies)"]
+      ],
+      "note": "General market-trend estimates. They vary by company and location."
+    },
+    "skills": [
+      { "title": "Programming & backend", "items": ["Python - scripting, automation, data handling", "Java / Go - enterprise backend systems", "SQL - joins, aggregations, optimisation", "REST APIs & GraphQL - building integrations", "Git & GitHub - version control and collaboration"] },
+      { "title": "Data & cloud", "items": ["Data pipelines (ETL) - Airflow, dbt", "One cloud platform in depth - AWS / GCP / Azure", "Docker & Kubernetes", "PostgreSQL, MongoDB and warehouses (Snowflake, BigQuery)"] },
+      { "title": "AI / ML basics", "items": ["LLM APIs - OpenAI, Anthropic Claude", "Prompt engineering basics", "RAG (Retrieval Augmented Generation)", "Basic ML so you can explain an AI product to a client"] },
+      { "title": "Client-facing skills", "items": ["Explain technical things simply to non-technical people", "Problem framing - turn a client's complaint into a technical requirement", "Presentation and demo skills", "Stakeholder management across teams", "Adaptability - become useful in a new domain within a week"] }
+    ],
+    "tools": ["Postman / Insomnia", "Jupyter Notebooks", "VS Code", "Slack / Notion / Jira", "Figma (basic)"]
+  },
+  "fastTrack": {
+    "title": "Fast track: 6 months",
+    "intro": "An intensive plan for people who already code. Target pace is about 55 hours a week.",
+    "months": [
+      {
+        "id": "m1",
+        "title": "Month 1",
+        "theme": "Foundations",
+        "rows": [
+          { "domain": "DSA", "topics": "Arrays, Strings, Hashing, Prefix Sum, Two Pointers, Sliding Window, Binary Search, Linked Lists, Stacks & Queues, Trees, BSTs, Graph Traversal (BFS/DFS), 100 LeetCode questions", "hours": 55 },
+          { "domain": "System Design", "topics": "Networking basics, DNS, HTTP/HTTPS, Databases, SQL vs NoSQL, Caching, Load Balancers, CAP Theorem, Horizontal vs Vertical Scaling", "hours": 20 },
+          { "domain": "Backend", "topics": "REST APIs, CRUD, HTTP methods, Authentication (JWT/OAuth), SQL joins, Indexing, Transactions, Git/GitHub workflow", "hours": 30 },
+          { "domain": "Cloud", "topics": "Docker fundamentals, Images, Containers, Docker Compose, Basic deployment", "hours": 10 },
+          { "domain": "AI / LLM", "topics": "Python, Prompt Engineering, OpenAI APIs, LangChain basics, Embeddings, Vector Databases (FAISS/Chroma)", "hours": 35 },
+          { "domain": "Projects", "topics": "Enterprise RAG chatbot with authentication, chat history and document ingestion", "hours": 35 },
+          { "domain": "Interview Prep", "topics": "Resume, LinkedIn, 10 STAR stories, Behavioral questions, 2 coding mocks", "hours": 20 }
+        ]
+      },
+      {
+        "id": "m2",
+        "title": "Month 2",
+        "theme": "Production Engineering",
+        "rows": [
+          { "domain": "DSA", "topics": "Dynamic Programming, Heaps, Tries, Union Find, Topological Sort, Advanced Graphs, Weekly contests, 100 LeetCode questions", "hours": 55 },
+          { "domain": "System Design", "topics": "API Design, Rate Limiting, Microservices, Distributed Systems, Event-driven Architecture, Message Queues", "hours": 25 },
+          { "domain": "Backend", "topics": "Kubernetes basics, CI/CD, Redis, Background Jobs, Logging, Exception Handling", "hours": 30 },
+          { "domain": "Cloud", "topics": "AWS/Azure compute, storage, IAM, networking basics", "hours": 15 },
+          { "domain": "AI / LLM", "topics": "Tool Calling, MCP, AI Agents, Structured Outputs, RAG optimization, LLM evaluation", "hours": 40 },
+          { "domain": "Projects", "topics": "AI Support Agent with tools, analytics dashboard, cloud deployment", "hours": 30 },
+          { "domain": "Interview Prep", "topics": "System Design mocks, Whiteboarding, Product case studies", "hours": 15 }
+        ]
+      },
+      {
+        "id": "m3",
+        "title": "Month 3",
+        "theme": "Customer Engineering",
+        "rows": [
+          { "domain": "DSA", "topics": "Company-tagged problems, Revision, Timed contests, Pattern recognition", "hours": 50 },
+          { "domain": "System Design", "topics": "Scalability, Pub/Sub, Kafka concepts, Data Pipelines, API Gateway, Observability", "hours": 25 },
+          { "domain": "Backend", "topics": "Performance optimization, Async processing, Security, Monitoring", "hours": 20 },
+          { "domain": "AI / LLM", "topics": "Production RAG, Prompt optimization, Evaluation pipelines, Guardrails", "hours": 30 },
+          { "domain": "Business", "topics": "Requirement gathering, Customer communication, Technical discovery, Product thinking", "hours": 25 },
+          { "domain": "Projects", "topics": "Operations dashboard with real-time metrics and alerts", "hours": 35 },
+          { "domain": "Interview Prep", "topics": "Behavioral, Case studies, Client communication practice", "hours": 20 }
+        ]
+      },
+      {
+        "id": "m4",
+        "title": "Month 4",
+        "theme": "Advanced Systems",
+        "rows": [
+          { "domain": "DSA", "topics": "Hard LeetCode, Graph DP, Segment Trees, Advanced contests", "hours": 45 },
+          { "domain": "System Design", "topics": "Multi-region architecture, Event Streaming, CQRS, Consistency models, Disaster Recovery", "hours": 30 },
+          { "domain": "Backend", "topics": "Observability, OpenTelemetry, Security, Testing, Performance profiling", "hours": 30 },
+          { "domain": "AI / LLM", "topics": "Fine-tuning concepts, AI evaluation, Guardrails, Agent orchestration", "hours": 35 },
+          { "domain": "Business", "topics": "Solution architecture, Technical proposals, Stakeholder management", "hours": 20 },
+          { "domain": "Projects", "topics": "Multi-tenant SaaS platform with RBAC and monitoring", "hours": 35 },
+          { "domain": "Interview Prep", "topics": "Architecture interviews and mock presentations", "hours": 25 }
+        ]
+      },
+      {
+        "id": "m5",
+        "title": "Month 5",
+        "theme": "Portfolio & Leadership",
+        "rows": [
+          { "domain": "DSA", "topics": "Revision, Mixed interview sets, Speed improvement, Company-specific questions", "hours": 40 },
+          { "domain": "System Design", "topics": "Full HLD & LLD mocks, Design trade-offs, Capacity estimation", "hours": 35 },
+          { "domain": "Backend", "topics": "Production readiness review, Scalability, Reliability, API optimization", "hours": 20 },
+          { "domain": "AI / LLM", "topics": "Multi-agent workflows, Memory, Evaluation, Cost optimization", "hours": 35 },
+          { "domain": "Business", "topics": "Executive communication, Product roadmap discussions, Prioritization", "hours": 25 },
+          { "domain": "Projects", "topics": "Polish projects, Documentation, Architecture diagrams, Demo videos", "hours": 40 },
+          { "domain": "Interview Prep", "topics": "Weekly mock interviews and feedback sessions", "hours": 25 }
+        ]
+      },
+      {
+        "id": "m6",
+        "title": "Month 6",
+        "theme": "Interview Sprint",
+        "rows": [
+          { "domain": "DSA", "topics": "150+ company-tagged questions, Timed interviews, Final revision", "hours": 45 },
+          { "domain": "System Design", "topics": "Daily HLD mocks, LLD, API design, Distributed systems revision", "hours": 35 },
+          { "domain": "Backend", "topics": "End-to-end backend revision, Debugging, Deployment review", "hours": 20 },
+          { "domain": "AI / LLM", "topics": "Production AI architecture, RAG review, Agent systems revision", "hours": 25 },
+          { "domain": "Business", "topics": "Palantir-style case studies, Customer scenarios, Executive presentations", "hours": 25 },
+          { "domain": "Projects", "topics": "Portfolio refinement, GitHub cleanup, Resume, LinkedIn", "hours": 30 },
+          { "domain": "Interview Prep", "topics": "4-5 mocks/week, Applications, Interview debriefs", "hours": 40 }
+        ]
+      }
+    ]
+  },
+  "beginnerPath": {
+    "title": "Beginner path: 12 months",
+    "intro": "For people starting from zero. If you already program, skip Phase 1 and start at Phase 2.",
+    "phases": [
+      { "id": "p1", "months": "Months 1-2", "title": "Foundation", "goal": "Write small automation scripts and simple CRUD apps.", "items": ["Python: variables, loops, functions, OOP", "Data structures and basic algorithms (arrays, dictionaries, sorting basics)", "Git & GitHub: repo, commit, push, pull, branching", "SQL basics: SELECT, JOIN, GROUP BY, subqueries"] },
+      { "id": "p2", "months": "Months 3-4", "title": "Backend + APIs", "goal": "Build a full backend service that connects to a database and exposes APIs.", "items": ["Build REST APIs with FastAPI or Flask (Python) or Express (Node.js)", "Authentication basics: JWT, OAuth concepts", "Test APIs with Postman", "Work with a relational database (PostgreSQL)"] },
+      { "id": "p3", "months": "Months 5-6", "title": "Cloud & Deployment", "goal": "Deploy your project live on the cloud.", "items": ["AWS/GCP basics: EC2/Compute, S3/Storage, IAM roles", "Docker: containerise your backend app", "Basic CI/CD: auto-deploy with GitHub Actions", "Kubernetes basics (concepts and kubectl commands)"] },
+      { "id": "p4", "months": "Months 7-8", "title": "Data Engineering & AI Basics", "goal": "Build a mini AI-powered project that uses a data pipeline and an LLM API together.", "items": ["ETL pipelines with Airflow or simple Python scripts", "Data warehousing concepts: Snowflake / BigQuery basics", "LLM APIs: build a small AI feature with the OpenAI or Claude API (chatbot, summariser)", "Vector database basics (Pinecone / Chroma) and RAG"] },
+      { "id": "p5", "months": "Months 9-10", "title": "Client-Facing Skills & Real Projects", "goal": "Prepare one end-to-end case study: problem, solution and demo.", "items": ["Practise mock client scenarios: write the problem in a document, then design the solution", "Presentation skills: explain a project in a 5-minute demo", "Read case studies: look up Palantir and Databricks FDE case studies", "Connect with FDEs on LinkedIn and learn their career paths"] },
+      { "id": "p6", "months": "Months 11-12", "title": "Applications & Interview Prep", "goal": "Be interview-ready and applying.", "items": ["Write a resume with projects and impact metrics (use numbers)", "Polish your GitHub portfolio with good README files", "Do mock interviews: coding, system design, behavioural", "Find referrals by talking to current FDEs on LinkedIn", "Apply: Palantir, Databricks, Scale AI and local enterprise SaaS companies"] }
+    ]
+  },
+  "projects": {
+    "intro": "Recruiters want to see real problem-solving, not tutorial copies. In every README write the problem, the solution you built, and the impact (time saved, accuracy improved...). That is exactly the thinking an FDE interview tests.",
+    "items": [
+      { "id": "onboarding", "title": "Client Onboarding Automation Tool", "text": "Take a new client's CSV/Excel data and automatically clean and load it into a database (ETL + validation)." },
+      { "id": "chatbot", "title": "Internal Support Chatbot", "text": "A RAG chatbot over company documentation that answers employee queries (LLM API + vector DB)." },
+      { "id": "dashboard", "title": "Real-time Dashboard", "text": "Take any public API (weather, stocks, sports) and build a live dashboard with filters and alerts." },
+      { "id": "saas", "title": "Multi-tenant SaaS Mini App", "text": "A small SaaS-style app where several 'clients' each see only their own data (multi-tenancy)." },
+      { "id": "hub", "title": "API Integration Hub", "text": "Combine two or three third-party APIs (payments, email, maps) into one unified API." }
+    ],
+    "resources": [
+      { "label": "Python", "text": "CS50P (Harvard), Automate the Boring Stuff with Python" },
+      { "label": "SQL", "text": "Mode Analytics SQL Tutorial, LeetCode SQL problems" },
+      { "label": "Cloud", "text": "AWS Free Tier hands-on labs, freeCodeCamp AWS course" },
+      { "label": "System design", "text": "Grokking the System Design Interview, ByteByteGo on YouTube" },
+      { "label": "AI / LLM", "text": "OpenAI and Anthropic official documentation, DeepLearning.AI short courses" },
+      { "label": "Communication", "text": "The Pyramid Principle - structured thinking for client communication" }
+    ]
+  },
+  "interview": {
+    "intro": "FDE interviews differ from normal software interviews: companies test communication, problem-solving speed and client-handling as well as coding. Expect 4 to 6 rounds, depending on the company (Palantir-style hiring).",
+    "rounds": [
+      { "id": "r1", "no": 1, "name": "Resume / application screening", "duration": "-", "tests": "Projects & relevant skills", "details": ["A recruiter reviews your resume and portfolio.", "They look for projects, impact metrics and signals of both coding and communication.", "LinkedIn recommendations and GitHub activity help at this stage."] },
+      { "id": "r2", "no": 2, "name": "Recruiter / HR call", "duration": "20-30 min", "tests": "Background, motivation, logistics", "details": ["They learn your background and experience.", "Expect: why are you interested in the FDE role?", "Logistics: location, readiness to travel, notice period.", "Salary expectations are discussed."] },
+      { "id": "r3", "no": 3, "name": "Technical / coding", "duration": "45-60 min", "tests": "DSA, SQL, coding approach", "details": ["A medium-level data structures and algorithms problem (LeetCode easy-medium).", "Sometimes practical coding: \"clean this dataset and produce this output\".", "A SQL query-writing round is possible.", "Live coding: explaining your approach is essential - they watch your thinking process."] },
+      { "id": "r4", "no": 4, "name": "Case study / take-home", "duration": "24-72 hrs", "tests": "Business + technical problem solving", "details": ["A real-world business problem, for example \"here is client data - find insights\".", "You get 24-72 hours to complete it.", "Tests coding and business thinking together.", "You submit a presentation or document."] },
+      { "id": "r5", "no": 5, "name": "Case presentation / deep dive", "duration": "45-60 min", "tests": "Communication, structured thinking", "details": ["Present your take-home to a panel.", "They question your decisions, trade-offs and assumptions.", "Communication and structured thinking matter most here.", "Common question: why this approach and not another?"] },
+      { "id": "r6", "no": 6, "name": "Behavioural / client-facing", "duration": "30-45 min", "tests": "Client handling, ambiguity, teamwork", "details": ["Situational: \"The client is aggressive and the deadline is impossible - what do you do?\"", "Examples of team collaboration.", "Ambiguity: how do you work when requirements are unclear?", "Travel and relocation readiness is confirmed.", "Sometimes run by a senior FDE or Field Engineering Lead."] },
+      { "id": "r7", "no": 7, "name": "System design (optional)", "duration": "45-60 min", "tests": "Scalability, architecture trade-offs", "optional": true, "details": ["Mostly for senior or mid-level roles.", "Example: how would you design a scalable data pipeline or integration system?", "Explain trade-offs: cost, scalability, latency."] },
+      { "id": "r8", "no": 8, "name": "Hiring manager", "duration": "30-45 min", "tests": "Culture fit, final decision", "details": ["The final round: overall fit, long-term motivation and career goals.", "The offer decision follows this round."] }
+    ],
+    "tips": [
+      { "title": "Coding round", "items": ["Solve 100-150 easy-medium LeetCode problems (arrays, strings, hashmaps, basic DP).", "Practise SQL: joins, window functions, aggregations.", "Practise explaining your approach out loud - avoid silent coding.", "Do not forget edge cases."] },
+      { "title": "Case study round", "items": ["Define the problem clearly before jumping to a solution.", "Write down your assumptions and justify them.", "Be data-driven: use numbers and metrics.", "Keep slides simple and clean - do not over-complicate.", "State trade-offs explicitly (time vs accuracy, cost vs scale)."] },
+      { "title": "Behavioural round", "items": ["Use the STAR method: Situation, Task, Action, Result.", "Have real examples ready: team conflict, tight deadline, ambiguous requirement.", "Prepare one strong client-facing example.", "Be honest: a genuine \"I didn't know, here is how I learned\" story makes a good impression."] }
+    ],
+    "mistakes": [
+      "Focusing only on coding and ignoring communication skills.",
+      "Presenting an over-complicated solution in the case study.",
+      "Jumping to a solution without understanding the client's real problem.",
+      "Not researching the company and its clients or domain.",
+      "Being unclear about travel or relocation flexibility."
+    ],
+    "proTip": "The panel mostly checks whether you are comfortable with ambiguity. In every answer, speak your thought process out loud: \"First I will understand this, then check that, then design the solution.\" A structured approach impresses."
+  },
+  "takeaways": [
+    "FDE = technical skills + business understanding + communication - all three matter equally.",
+    "Showing impact in projects matters even more than the coding itself.",
+    "In interviews, structured thinking and clear communication score highest.",
+    "Consistency wins: practise a little every day."
+  ]
+}

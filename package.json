@@ -1,0 +1,27 @@
+{
+  "name": "ai-guide",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Two-track learning hub: AI Engineer (LangChain, LangGraph, RAG, agents) and Forward Deployed Engineer (FDE) prep.",
+  "type": "module",
+  "scripts": {
+    "setup": "npm install && npm install --prefix client",
+    "scrape": "node server/scraper/run.js",
+    "import:plan": "node server/content/import-sheet.js",
+    "dev": "concurrently -n api,web -c cyan,magenta \"npm:dev:server\" \"npm:dev:client\"",
+    "dev:server": "node --watch server/index.js",
+    "dev:client": "npm run dev --prefix client",
+    "build": "npm run build --prefix client",
+    "start": "NODE_ENV=production node server/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

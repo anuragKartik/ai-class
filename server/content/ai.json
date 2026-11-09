@@ -1,0 +1,113 @@
+{
+  "program": {
+    "title": "AI Engineer Program",
+    "blurb": "Go from Python basics to shipping production RAG and multi-agent systems, using only free resources.",
+    "credit": "5-step roadmap adapted from the \"Zero-to-Hired AI Engineer Roadmap 2026\" by Satya Explains. 100-day plan from your own sheet."
+  },
+  "why": {
+    "intro": "An AI engineer is a software engineer who builds applications on top of pre-trained AI models, using LLM APIs, retrieval-augmented generation (RAG) and agent frameworks. The job is about applying models well, not inventing new ones, so strong software skills matter more than a maths PhD.",
+    "stats": [
+      { "value": "#1", "label": "AI Engineer was LinkedIn's fastest-growing job title in the US for two years running (Jobs on the Rise 2026)" },
+      { "value": "56%", "label": "Wage premium for roles that require AI skills, up from 25% the year before (PwC Global AI Jobs Barometer 2025)" },
+      { "value": "8-60L+", "label": "Indicative India salary range, entry to senior (LPA). Entry 8-12, mid 18-30, senior 35-60+. Pay varies a lot by company and city." }
+    ],
+    "note": "Figures are as reported in the source roadmap and are indicative only."
+  },
+  "steps": [
+    {
+      "id": "python",
+      "title": "Python",
+      "tagline": "The main language of AI. Learn it by building, not just watching.",
+      "outcome": "Write real programs, not just follow tutorials.",
+      "todo": [
+        "Watching tutorials is fine, but the real learning happens when you build projects.",
+        "Follow the 30 Days of Python repo. Each day has explanations, exercises and small projects.",
+        "Cover the basics (variables, data types, loops, functions), then files, APIs, classes and pandas.",
+        "Goal: write and debug a small program on your own, without copy-pasting."
+      ],
+      "resources": [
+        { "label": "30 Days of Python (GitHub)", "note": "Step-by-step challenge with exercises", "url": "https://github.com/Asabeneh/30-Days-Of-Python" },
+        { "label": "Official Python documentation", "note": "Reference when you get stuck", "url": "https://docs.python.org/3/" }
+      ]
+    },
+    {
+      "id": "concepts",
+      "title": "Core Concepts",
+      "tagline": "Learn the basics first. Go deeper later.",
+      "outcome": "Math, statistics and ML basics - enough to build.",
+      "todo": [
+        "Math: build intuition for linear algebra, calculus and how neural networks learn.",
+        "Statistics: probability, distributions, bias vs variance, how to judge a model.",
+        "ML concepts: supervised vs unsupervised learning, regression, classification, evaluation.",
+        "You do not need to master everything. Learn enough to build, then return when a project demands more."
+      ],
+      "resources": [
+        { "label": "3Blue1Brown", "note": "Visual maths: linear algebra, calculus, neural networks", "url": "https://www.youtube.com/@3blue1brown" },
+        { "label": "StatQuest with Josh Starmer", "note": "Statistics and ML explained simply", "url": "https://www.youtube.com/@statquest" },
+        { "label": "Andrew Ng - Stanford CS229 (full lecture playlist)", "note": "Machine learning fundamentals", "url": "https://www.youtube.com/playlist?list=PLA89DCFA6ADACE599" },
+        { "label": "Stanford CS229 course website", "note": "Syllabus and notes", "url": "https://cs229.stanford.edu/" }
+      ]
+    },
+    {
+      "id": "hood",
+      "title": "Under the Hood",
+      "tagline": "Where most people go wrong: jumping straight to frameworks.",
+      "outcome": "Understand what happens inside a GPT-style model.",
+      "todo": [
+        "Before reaching for any framework, build a GPT from scratch with Andrej Karpathy.",
+        "In about two hours you code a small character-level GPT and see attention and transformers in action.",
+        "After this you will know what is really happening inside the model, which makes every later step easier."
+      ],
+      "resources": [
+        { "label": "Let's build GPT: from scratch, in code, spelled out", "note": "Andrej Karpathy, YouTube", "url": "https://www.youtube.com/watch?v=kCc8FmEb1nY", "videoId": "kCc8FmEb1nY" },
+        { "label": "Neural Networks: Zero to Hero", "note": "Full series on Andrej Karpathy's channel", "url": "https://www.youtube.com/@AndrejKarpathy" }
+      ]
+    },
+    {
+      "id": "systems",
+      "title": "AI Systems",
+      "tagline": "Everything around the model is what makes it a product.",
+      "outcome": "Evals, caching, RAG, tools and MCP.",
+      "todo": [
+        "Learn the building blocks of real AI systems: inference, evals, caching, pipelines, embeddings, vector databases, tool calling and MCP.",
+        "Then pick up production tools such as LangChain and LangGraph."
+      ],
+      "resources": [
+        { "label": "LangChain documentation", "note": "Framework for LLM apps, agents and RAG", "url": "https://docs.langchain.com" },
+        { "label": "LangGraph (GitHub)", "note": "Stateful, multi-step agent workflows", "url": "https://github.com/langchain-ai/langgraph" },
+        { "label": "Model Context Protocol (MCP)", "note": "Standard way to connect models to tools and data", "url": "https://modelcontextprotocol.io" },
+        { "label": "Hugging Face", "note": "Pre-trained models, datasets and deployment tools", "url": "https://huggingface.co" }
+      ]
+    },
+    {
+      "id": "build",
+      "title": "Build",
+      "tagline": "Get your hands dirty. This is what separates a demo from a real project.",
+      "outcome": "A production RAG app and a multi-agent system, with evals and observability.",
+      "todo": [
+        "Build a production-style RAG app: ingest documents, chunk, embed, store in a vector database, retrieve and answer with sources.",
+        "Build a multi-agent system: agents with different roles that call tools and hand work to each other.",
+        "Add evals to both: a test set, scoring and regression checks, so you know when a change makes things worse.",
+        "Add observability to both: trace every call, track latency, cost and failures.",
+        "Deploy at least one project with a live link and write a short README explaining your design choices."
+      ],
+      "resources": [
+        { "label": "LangSmith", "note": "Tracing and evals - observe and evaluate LLM apps", "url": "https://smith.langchain.com" },
+        { "label": "Weights & Biases", "note": "Experiment tracking and monitoring", "url": "https://wandb.ai" }
+      ]
+    }
+  ],
+  "checklist": [
+    "RAG app with sources, deployed with a live link",
+    "Multi-agent system that uses at least two tools",
+    "Eval set and scores for both projects",
+    "Tracing and observability dashboards for both",
+    "GitHub README for each project: problem, design, results"
+  ],
+  "mistakes": [
+    "Spending months on theory before writing any code.",
+    "Jumping into frameworks without understanding what a model actually does.",
+    "Paying for expensive bootcamps or collecting certificates instead of shipping projects.",
+    "Stopping at a demo. Add evals and observability so it behaves like a real product."
+  ]
+}

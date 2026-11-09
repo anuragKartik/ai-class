@@ -1,0 +1,102 @@
+{
+  "mocks": {
+    "intro": "Practise here for free, then book a live mock with a real interviewer when you want pressure.",
+    "types": [
+      {
+        "id": "coding",
+        "label": "Coding",
+        "minutes": 45,
+        "hint": "Talk out loud. Start with an example, then brute force, then improve. Handle edge cases last.",
+        "questions": [
+          { "id": "c1", "title": "Clean a messy client CSV", "prompt": "A hospital sends a 50,000-row CSV of patients. Names are dirty, dates mix DD/MM and MM/DD, and 8% of rows are duplicates. Write a function that returns a clean table and a one-page summary of what you fixed. What would you ask the client before you start?" },
+          { "id": "c2", "title": "Merge two client systems", "prompt": "Client A has users in Postgres (email as key). Client B has users in a REST API (phone as key). Some people exist in both. Design and sketch code to produce a single customer list without losing anyone. How do you handle conflicts?" },
+          { "id": "c3", "title": "SQL: top failing workflows", "prompt": "Tables: events(id, client_id, workflow, status, latency_ms, ts). Write SQL for: the 5 workflows with the worst p95 latency in the last 7 days, per client, ignoring test accounts. Then explain how you would index this." },
+          { "id": "c4", "title": "Rate-limit an LLM endpoint", "prompt": "Your RAG chatbot is blowing the OpenAI budget. Implement a per-tenant rate limiter and a fallback when the model is down. What metrics do you log?" }
+        ]
+      },
+      {
+        "id": "behavioral",
+        "label": "Behavioral",
+        "minutes": 30,
+        "hint": "Use STAR: Situation, Task, Action, Result. End with what you learned. Keep it under two minutes.",
+        "questions": [
+          { "id": "b1", "title": "Impossible deadline", "prompt": "The client is aggressive and the deadline is impossible. What do you do this week, and what do you say in the room?" },
+          { "id": "b2", "title": "Unclear requirements", "prompt": "You join a project and nobody can explain what 'done' means. Walk through your first 72 hours." },
+          { "id": "b3", "title": "You were wrong", "prompt": "Tell me about a time your technical recommendation was wrong in front of a customer. What did you do next?" },
+          { "id": "b4", "title": "Why FDE / AI Engineer?", "prompt": "Why this role, why now, and why not a core product SWE job? Give a specific story, not a generic answer." }
+        ]
+      },
+      {
+        "id": "case",
+        "label": "Case study",
+        "minutes": 45,
+        "hint": "Restate the problem, list assumptions, pick a thin slice, show trade-offs (time vs accuracy vs cost).",
+        "questions": [
+          { "id": "k1", "title": "Hospital document chaos", "prompt": "A hospital has 12 years of PDFs, scans and emails. They want 'an AI that answers clinician questions with sources'. Scope a 6-week pilot. What do you build first, what data do you need, and how do you measure success?" },
+          { "id": "k2", "title": "Fraud alerts that nobody trusts", "prompt": "A fintech client's fraud model flags 4,000 cases a day. Analysts look at 200. Design a workflow (human + AI) that triples useful reviews without missing high-risk cases." },
+          { "id": "k3", "title": "Sales wants a demo tomorrow", "prompt": "A VP promised a live demo of 'our AI copilot' in 24 hours on the client's own data. The data is a 2GB Excel dump you have not seen. Plan the day. What do you refuse to fake?" }
+        ]
+      },
+      {
+        "id": "system",
+        "label": "System design",
+        "minutes": 45,
+        "hint": "Start with users and scale. Draw the path of one request. Call out failure modes and cost.",
+        "questions": [
+          { "id": "s1", "title": "Multi-tenant RAG", "prompt": "Design a RAG service used by 40 enterprise clients. Each client has private documents. Cover ingest, retrieval, tenancy, evals, and what happens when one client uploads malware." },
+          { "id": "s2", "title": "Client data pipeline", "prompt": "Design a pipeline that pulls from Salesforce, a warehouse, and three CSVs every night, then serves a dashboard by 8am. Talk consistency, retries, and alerting." }
+        ]
+      }
+    ],
+    "book": [
+      { "id": "self", "title": "Free self-practice", "price": "Free", "note": "Use the timer on this page. Record yourself. Score honestly.", "url": null, "cta": "Practise below" },
+      { "id": "pramp", "title": "Peer mock (Pramp)", "price": "Free", "note": "Swap 45-minute interviews with another candidate. Good for coding rust.", "url": "https://www.pramp.com", "cta": "Book on Pramp" },
+      { "id": "exponent", "title": "Structured mocks (Exponent)", "price": "Paid", "note": "Coaches for product, engineering and case-style rounds. Useful for FDE presentations.", "url": "https://www.tryexponent.com", "cta": "See Exponent" },
+      { "id": "iio", "title": "Anonymous live mock (interviewing.io)", "price": "Paid", "note": "Real interviewers from top companies. Closest thing to the real loop.", "url": "https://interviewing.io", "cta": "See interviewing.io" }
+    ]
+  },
+  "jobs": {
+    "intro": "Apply in public, then ask for a referral. A warm intro beats a cold apply almost every time.",
+    "boards": [
+      { "company": "Palantir", "role": "Forward Deployed Software Engineer", "url": "https://www.palantir.com/careers/" },
+      { "company": "OpenAI", "role": "Forward Deployed / Applied", "url": "https://openai.com/careers/search/" },
+      { "company": "Anthropic", "role": "Forward Deployed / Deployment", "url": "https://www.anthropic.com/careers" },
+      { "company": "Databricks", "role": "Forward Deployed / Field Engineering", "url": "https://www.databricks.com/company/careers" },
+      { "company": "Snowflake", "role": "Professional Services / Field", "url": "https://careers.snowflake.com" },
+      { "company": "Scale AI", "role": "Deployment / Applied AI", "url": "https://scale.com/careers" }
+    ],
+    "searches": [
+      { "label": "LinkedIn jobs: Forward Deployed Engineer", "url": "https://www.linkedin.com/jobs/search/?keywords=forward%20deployed%20engineer" },
+      { "label": "LinkedIn jobs: AI Engineer", "url": "https://www.linkedin.com/jobs/search/?keywords=AI%20engineer" },
+      { "label": "LinkedIn jobs: Field / Deployment Engineer", "url": "https://www.linkedin.com/jobs/search/?keywords=deployment%20engineer%20AI" },
+      { "label": "Wellfound: AI engineer", "url": "https://wellfound.com/role/l/ai-engineer" }
+    ]
+  },
+  "linkedin": {
+    "intro": "Connect with people who already do the job. Ask for 15 minutes, not a referral in the first message.",
+    "peopleSearches": [
+      { "label": "People: Forward Deployed Engineer", "url": "https://www.linkedin.com/search/results/people/?keywords=forward%20deployed%20engineer" },
+      { "label": "People: Palantir FDSE / FDE", "url": "https://www.linkedin.com/search/results/people/?keywords=Palantir%20forward%20deployed" },
+      { "label": "People: OpenAI forward deployed", "url": "https://www.linkedin.com/search/results/people/?keywords=OpenAI%20forward%20deployed" },
+      { "label": "People: AI Engineer hiring manager", "url": "https://www.linkedin.com/search/results/people/?keywords=AI%20engineer%20hiring%20manager" },
+      { "label": "Posts: FDE day in the life", "url": "https://www.linkedin.com/search/results/content/?keywords=forward%20deployed%20engineer" }
+    ],
+    "templates": [
+      {
+        "id": "connect",
+        "title": "Connection request (no ask yet)",
+        "text": "Hi {name} — I am preparing for Forward Deployed / AI Engineer roles and have been following your work at {company}. Would be glad to connect and learn from people actually doing the job."
+      },
+      {
+        "id": "coffee",
+        "title": "After they accept: 15-minute chat",
+        "text": "Thanks for connecting, {name}. I am {your background in one line}. I am targeting FDE / applied AI roles in the next few months and would value 15 minutes on what the loop actually tests. Happy to send a short agenda. No pressure if timing is bad."
+      },
+      {
+        "id": "referral",
+        "title": "Referral ask (only after a chat)",
+        "text": "Thanks again for the time last week, {name}. I applied to {role} at {company} (link: {url}). If you are open to a referral I can send a 5-line summary + resume. If not, I appreciate the advice either way."
+      }
+    ]
+  }
+}

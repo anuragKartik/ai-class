@@ -1,0 +1,3473 @@
+{
+ "title": "100 Days of AI Engineering: Daily Resource Plan",
+ "subtitle": "Pick one option per day in the yellow 'Your Pick' column. Amber cells = resources you've already shared (none in Days 1-7). Options marked 'Practice Qs', 'Checklist' or 'Interview Q&A' point to sections of your own PDFs.",
+ "totalDays": 100,
+ "phases": [
+  {
+   "no": 1,
+   "name": "Orientation & Tooling",
+   "days": [
+    {
+     "day": 1,
+     "topic": "What is AI Engineering?",
+     "outcome": "Get the big picture: what LLMs are and what an AI Engineer actually does.",
+     "options": {
+      "beginner": {
+       "title": "Large Language Models explained briefly",
+       "url": "https://www.youtube.com/watch?v=LPZh9BOjkQs",
+       "note": null,
+       "videoId": "LPZh9BOjkQs",
+       "type": "Video",
+       "mins": 8,
+       "creator": "3Blue1Brown"
+      },
+      "intermediate": {
+       "title": "The Rise of the AI Engineer",
+       "url": "https://www.latent.space/p/ai-engineer",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 15,
+       "creator": "swyx / Latent Space"
+      },
+      "advanced": {
+       "title": "Software Is Changing (Again)",
+       "url": "https://www.youtube.com/watch?v=LCEmiRjPEtQ",
+       "note": null,
+       "videoId": "LCEmiRjPEtQ",
+       "type": "Video",
+       "mins": 40,
+       "creator": "Andrej Karpathy (YC AI Startup School)"
+      }
+     }
+    },
+    {
+     "day": 2,
+     "topic": "The LLM landscape today",
+     "outcome": "Know how LLMs are trained, used day to day, and where the field is heading.",
+     "options": {
+      "beginner": {
+       "title": "Intro to Large Language Models (watch first 25 min)",
+       "url": "https://www.youtube.com/watch?v=zjkBMFhNj_g",
+       "note": null,
+       "videoId": "zjkBMFhNj_g",
+       "type": "Video",
+       "mins": 25,
+       "creator": "Andrej Karpathy"
+      },
+      "intermediate": {
+       "title": "How I use LLMs (pick 2-3 chapters)",
+       "url": "https://www.youtube.com/watch?v=EWvNQjAaOHw",
+       "note": null,
+       "videoId": "EWvNQjAaOHw",
+       "type": "Video",
+       "mins": 30,
+       "creator": "Andrej Karpathy"
+      },
+      "advanced": {
+       "title": "2025: The year in LLMs",
+       "url": "https://simonwillison.net/2025/Dec/31/the-year-in-llms/",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 30,
+       "creator": "Simon Willison"
+      }
+     }
+    },
+    {
+     "day": 3,
+     "topic": "Python for AI Engineers",
+     "outcome": "Get comfortable with the Python you'll use daily: types, data models, async.",
+     "options": {
+      "beginner": {
+       "title": "The Python Tutorial (sections 3-5)",
+       "url": "https://docs.python.org/3/tutorial/",
+       "note": null,
+       "videoId": null,
+       "type": "Docs",
+       "mins": 30,
+       "creator": "Python.org"
+      },
+      "intermediate": {
+       "title": "Why use Pydantic?",
+       "url": "https://docs.pydantic.dev/latest/why/",
+       "note": null,
+       "videoId": null,
+       "type": "Docs",
+       "mins": 15,
+       "creator": "Pydantic"
+      },
+      "advanced": {
+       "title": "Async IO in Python: A Complete Walkthrough",
+       "url": "https://realpython.com/async-io-python/",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 35,
+       "creator": "Real Python"
+      }
+     }
+    },
+    {
+     "day": 4,
+     "topic": "Dev tooling: Git, envs, containers",
+     "outcome": "Set up the tools every AI project needs: version control, env management, Docker.",
+     "options": {
+      "beginner": {
+       "title": "Version Control (Git) lecture",
+       "url": "https://missing.csail.mit.edu/2020/version-control/",
+       "note": null,
+       "videoId": null,
+       "type": "Video + notes",
+       "mins": 30,
+       "creator": "MIT Missing Semester"
+      },
+      "intermediate": {
+       "title": "uv: Getting started",
+       "url": "https://docs.astral.sh/uv/getting-started/",
+       "note": null,
+       "videoId": null,
+       "type": "Docs",
+       "mins": 15,
+       "creator": "Astral"
+      },
+      "advanced": {
+       "title": "Docker: Get started",
+       "url": "https://docs.docker.com/get-started/",
+       "note": null,
+       "videoId": null,
+       "type": "Docs / Hands-on",
+       "mins": 40,
+       "creator": "Docker"
+      }
+     }
+    },
+    {
+     "day": 5,
+     "topic": "APIs & HTTP basics",
+     "outcome": "Understand requests, JSON, and how to build a small API service.",
+     "options": {
+      "beginner": {
+       "title": "An overview of HTTP",
+       "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 15,
+       "creator": "MDN"
+      },
+      "intermediate": {
+       "title": "FastAPI tutorial: First Steps",
+       "url": "https://fastapi.tiangolo.com/tutorial/first-steps/",
+       "note": null,
+       "videoId": null,
+       "type": "Docs / Hands-on",
+       "mins": 25,
+       "creator": "FastAPI"
+      },
+      "advanced": {
+       "title": "FastAPI: Concurrency and async / await",
+       "url": "https://fastapi.tiangolo.com/async/",
+       "note": null,
+       "videoId": null,
+       "type": "Docs",
+       "mins": 20,
+       "creator": "FastAPI"
+      }
+     }
+    },
+    {
+     "day": 6,
+     "topic": "Your first LLM API call",
+     "outcome": "Call an LLM from code and understand messages, roles, tokens and parameters.",
+     "options": {
+      "beginner": {
+       "title": "Get started with Claude (quickstart)",
+       "url": "https://platform.claude.com/docs/en/get-started",
+       "note": null,
+       "videoId": null,
+       "type": "Docs / Hands-on",
+       "mins": 20,
+       "creator": "Anthropic"
+      },
+      "intermediate": {
+       "title": "Developer quickstart",
+       "url": "https://platform.openai.com/docs/quickstart",
+       "note": null,
+       "videoId": null,
+       "type": "Docs / Hands-on",
+       "mins": 20,
+       "creator": "OpenAI"
+      },
+      "advanced": {
+       "title": "Anthropic Courses: API Fundamentals (notebooks)",
+       "url": "https://github.com/anthropics/courses",
+       "note": null,
+       "videoId": null,
+       "type": "Course / Hands-on",
+       "mins": 45,
+       "creator": "Anthropic"
+      }
+     }
+    },
+    {
+     "day": 7,
+     "topic": "Linear algebra intuition",
+     "outcome": "Vectors, dot products and matrices: the language embeddings and attention are written in.",
+     "options": {
+      "beginner": {
+       "title": "Vectors | Essence of linear algebra, ch. 1",
+       "url": "https://www.youtube.com/watch?v=fNk_zzaMoSs",
+       "note": null,
+       "videoId": "fNk_zzaMoSs",
+       "type": "Video",
+       "mins": 10,
+       "creator": "3Blue1Brown"
+      },
+      "intermediate": {
+       "title": "Dot products and duality | Essence of linear algebra, ch. 9",
+       "url": "https://www.youtube.com/watch?v=LyGKycYT2v0",
+       "note": null,
+       "videoId": "LyGKycYT2v0",
+       "type": "Video",
+       "mins": 14,
+       "creator": "3Blue1Brown"
+      },
+      "advanced": {
+       "title": "Mathematics for Machine Learning, ch. 2 (Linear Algebra)",
+       "url": "https://mml-book.github.io/",
+       "note": null,
+       "videoId": null,
+       "type": "Book (free PDF)",
+       "mins": 60,
+       "creator": "Deisenroth, Faisal & Ong"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "no": 2,
+   "name": "Math, Stats & ML Foundations",
+   "days": [
+    {
+     "day": 8,
+     "topic": "Probability basics",
+     "outcome": "Think in probabilities: Bayes, distributions, and why LLM outputs are samples.",
+     "options": {
+      "beginner": {
+       "title": "Bayes theorem, the geometry of changing beliefs",
+       "url": "https://www.youtube.com/watch?v=HZGCoVF3YvM",
+       "note": null,
+       "videoId": "HZGCoVF3YvM",
+       "type": "Video",
+       "mins": 15,
+       "creator": "3Blue1Brown"
+      },
+      "intermediate": {
+       "title": "Seeing Theory (chapters 1-3, interactive)",
+       "url": "https://seeing-theory.brown.edu/",
+       "note": null,
+       "videoId": null,
+       "type": "Interactive",
+       "mins": 25,
+       "creator": "Brown University"
+      },
+      "advanced": {
+       "title": "Statistics 110: Probability (lectures 1-2)",
+       "url": "https://projects.iq.harvard.edu/stat110/youtube",
+       "note": null,
+       "videoId": null,
+       "type": "Lecture series",
+       "mins": 50,
+       "creator": "Joe Blitzstein, Harvard"
+      }
+     }
+    },
+    {
+     "day": 9,
+     "topic": "Descriptive statistics",
+     "outcome": "Summarise data properly: centre, spread, distributions, and picking the right average.",
+     "options": {
+      "beginner": {
+       "title": "Descriptive Statistics playlist (first 3 videos)",
+       "url": "https://www.youtube.com/watch?v=bfQLNyiDPsk&list=PLTNMv857s9WVStKLco6ZBOsfSGXzJ1L0f",
+       "note": null,
+       "videoId": "bfQLNyiDPsk",
+       "type": "Video playlist",
+       "mins": 25,
+       "creator": "From your Statistics Roadmap"
+      },
+      "intermediate": {
+       "title": "On Average, You're Using the Wrong Average",
+       "url": "https://towardsdatascience.com/on-average-youre-using-the-wrong-average-geometric-harmonic-means-in-data-analysis-2a703e21ea0",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 15,
+       "creator": "From your Statistics Roadmap"
+      },
+      "advanced": {
+       "title": "Think Stats, 3rd ed. (ch. 1-2)",
+       "url": "https://allendowney.github.io/ThinkStats/",
+       "note": null,
+       "videoId": null,
+       "type": "Book (free, notebooks)",
+       "mins": 45,
+       "creator": "Allen Downey"
+      }
+     }
+    },
+    {
+     "day": 10,
+     "topic": "Inference: hypothesis tests & p-values",
+     "outcome": "Know what a p-value does and doesn't mean; you'll need this for evals and A/B tests.",
+     "options": {
+      "beginner": {
+       "title": "p-values: What they are and how to interpret them",
+       "url": "https://www.youtube.com/watch?v=vemZtEM63GY",
+       "note": null,
+       "videoId": "vemZtEM63GY",
+       "type": "Video",
+       "mins": 12,
+       "creator": "StatQuest"
+      },
+      "intermediate": {
+       "title": "Statistics Fundamentals playlist (hypothesis testing lectures)",
+       "url": "https://www.youtube.com/watch?v=uhxtUt_-GyM&list=PL1328115D3D8A2566",
+       "note": null,
+       "videoId": "uhxtUt_-GyM",
+       "type": "Video playlist",
+       "mins": 30,
+       "creator": "From your Statistics Roadmap"
+      },
+      "advanced": {
+       "title": "Statistical tests, P values, confidence intervals, and power (Greenland et al.)",
+       "url": "https://link.springer.com/article/10.1007/s10654-016-0149-3",
+       "note": null,
+       "videoId": null,
+       "type": "Paper",
+       "mins": 40,
+       "creator": "From your Statistics Roadmap"
+      }
+     }
+    },
+    {
+     "day": 11,
+     "topic": "Linear regression",
+     "outcome": "Fit your first model and understand loss, least squares and coefficients.",
+     "options": {
+      "beginner": {
+       "title": "Linear Regression Basics playlist (first 2 videos)",
+       "url": "https://www.youtube.com/watch?v=ZkjP5RJLQF4&list=PLIeGtxpvyG-LoKUpV0fSY8BGKIMIdmfCi",
+       "note": null,
+       "videoId": "ZkjP5RJLQF4",
+       "type": "Video playlist",
+       "mins": 20,
+       "creator": "From your Statistics Roadmap"
+      },
+      "intermediate": {
+       "title": "Linear Regression, Clearly Explained",
+       "url": "https://www.youtube.com/watch?v=7ArmBVF2dCs",
+       "note": null,
+       "videoId": "7ArmBVF2dCs",
+       "type": "Video",
+       "mins": 27,
+       "creator": "StatQuest"
+      },
+      "advanced": {
+       "title": "ISLR lectures: Chapter 3 (Linear Regression)",
+       "url": "https://www.youtube.com/watch?v=5N9V07EIfIg&list=PLOg0ngHtcqbPTlZzRHA2ocQZqB1D_qZ5V",
+       "note": null,
+       "videoId": "5N9V07EIfIg",
+       "type": "Lecture series",
+       "mins": 45,
+       "creator": "From your Statistics Roadmap"
+      }
+     }
+    },
+    {
+     "day": 12,
+     "topic": "Machine learning fundamentals",
+     "outcome": "Training vs test data, overfitting, bias-variance and how ML projects really work.",
+     "options": {
+      "beginner": {
+       "title": "Machine Learning Crash Course (intro + linear regression modules)",
+       "url": "https://developers.google.com/machine-learning/crash-course",
+       "note": null,
+       "videoId": null,
+       "type": "Course",
+       "mins": 30,
+       "creator": "Google"
+      },
+      "intermediate": {
+       "title": "Machine Learning Fundamentals: Bias and Variance",
+       "url": "https://www.youtube.com/watch?v=EuBBz3bI-aA",
+       "note": null,
+       "videoId": "EuBBz3bI-aA",
+       "type": "Video",
+       "mins": 7,
+       "creator": "StatQuest"
+      },
+      "advanced": {
+       "title": "Machine Learning Systems Design (Chip Huyen, free booklet: project setup & data)",
+       "url": "https://github.com/chiphuyen/machine-learning-systems-design",
+       "note": null,
+       "videoId": null,
+       "type": "Book (free)",
+       "mins": 45,
+       "creator": "From your System Design Prep doc (Chip Huyen)"
+      }
+     }
+    },
+    {
+     "day": 13,
+     "topic": "Classification & metrics",
+     "outcome": "Precision, recall, ROC/AUC: the metrics you'll reuse when evaluating LLM systems.",
+     "options": {
+      "beginner": {
+       "title": "ML Crash Course: Classification module",
+       "url": "https://developers.google.com/machine-learning/crash-course/classification",
+       "note": null,
+       "videoId": null,
+       "type": "Course",
+       "mins": 25,
+       "creator": "Google"
+      },
+      "intermediate": {
+       "title": "ISLR lectures: Chapter 4 (Classification)",
+       "url": "https://www.youtube.com/watch?v=5N9V07EIfIg&list=PLOg0ngHtcqbPTlZzRHA2ocQZqB1D_qZ5V",
+       "note": null,
+       "videoId": "5N9V07EIfIg",
+       "type": "Lecture series",
+       "mins": 40,
+       "creator": "From your Statistics Roadmap"
+      },
+      "advanced": {
+       "title": "scikit-learn: Metrics and scoring",
+       "url": "https://scikit-learn.org/stable/modules/model_evaluation.html",
+       "note": null,
+       "videoId": null,
+       "type": "Docs",
+       "mins": 40,
+       "creator": "scikit-learn"
+      }
+     }
+    },
+    {
+     "day": 14,
+     "topic": "Neural networks",
+     "outcome": "What a neuron, layer and weight are, and how a network learns.",
+     "options": {
+      "beginner": {
+       "title": "But what is a neural network? | Deep Learning ch. 1",
+       "url": "https://www.youtube.com/watch?v=aircAruvnKk",
+       "note": null,
+       "videoId": "aircAruvnKk",
+       "type": "Video",
+       "mins": 19,
+       "creator": "3Blue1Brown"
+      },
+      "intermediate": {
+       "title": "Gradient descent, how neural networks learn | ch. 2",
+       "url": "https://www.youtube.com/watch?v=IHZwWFHWa-w",
+       "note": null,
+       "videoId": "IHZwWFHWa-w",
+       "type": "Video",
+       "mins": 21,
+       "creator": "3Blue1Brown"
+      },
+      "advanced": {
+       "title": "Backpropagation, intuitively | ch. 3",
+       "url": "https://www.youtube.com/watch?v=Ilg3gGewQ5U",
+       "note": null,
+       "videoId": "Ilg3gGewQ5U",
+       "type": "Video",
+       "mins": 13,
+       "creator": "3Blue1Brown"
+      }
+     }
+    },
+    {
+     "day": 15,
+     "topic": "Backprop from scratch",
+     "outcome": "Build a tiny autograd engine so 'training' is no longer magic.",
+     "options": {
+      "beginner": {
+       "title": "Backpropagation calculus | ch. 4",
+       "url": "https://www.youtube.com/watch?v=tIeHLnjs5U8",
+       "note": null,
+       "videoId": "tIeHLnjs5U8",
+       "type": "Video",
+       "mins": 10,
+       "creator": "3Blue1Brown"
+      },
+      "intermediate": {
+       "title": "The spelled-out intro to neural networks: building micrograd",
+       "url": "https://www.youtube.com/watch?v=VMj-3S1tku0",
+       "note": null,
+       "videoId": "VMj-3S1tku0",
+       "type": "Video / Hands-on",
+       "mins": 60,
+       "creator": "Andrej Karpathy"
+      },
+      "advanced": {
+       "title": "Building makemore, part 1",
+       "url": "https://www.youtube.com/watch?v=PaCmpygFfXo",
+       "note": null,
+       "videoId": "PaCmpygFfXo",
+       "type": "Video / Hands-on",
+       "mins": 60,
+       "creator": "Andrej Karpathy"
+      }
+     }
+    },
+    {
+     "day": 16,
+     "topic": "PyTorch essentials",
+     "outcome": "Tensors, autograd and a training loop in the framework nearly every model uses.",
+     "options": {
+      "beginner": {
+       "title": "Learn the Basics (PyTorch tutorial)",
+       "url": "https://docs.pytorch.org/tutorials/beginner/basics/intro.html",
+       "note": null,
+       "videoId": null,
+       "type": "Docs / Hands-on",
+       "mins": 40,
+       "creator": "PyTorch"
+      },
+      "intermediate": {
+       "title": "Dive into Deep Learning: Preliminaries",
+       "url": "https://d2l.ai/chapter_preliminaries/index.html",
+       "note": null,
+       "videoId": null,
+       "type": "Book (free)",
+       "mins": 45,
+       "creator": "d2l.ai"
+      },
+      "advanced": {
+       "title": "Autograd mechanics",
+       "url": "https://docs.pytorch.org/docs/stable/notes/autograd.html",
+       "note": null,
+       "videoId": null,
+       "type": "Docs",
+       "mins": 25,
+       "creator": "PyTorch"
+      }
+     }
+    },
+    {
+     "day": 17,
+     "topic": "Word embeddings",
+     "outcome": "How words become vectors that capture meaning: the root of semantic search.",
+     "options": {
+      "beginner": {
+       "title": "The Illustrated Word2vec",
+       "url": "https://jalammar.github.io/illustrated-word2vec/",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 25,
+       "creator": "Jay Alammar"
+      },
+      "intermediate": {
+       "title": "Word Embedding and Word2Vec, Clearly Explained",
+       "url": "https://www.youtube.com/watch?v=viZrOnJclY0",
+       "note": null,
+       "videoId": "viZrOnJclY0",
+       "type": "Video",
+       "mins": 16,
+       "creator": "StatQuest"
+      },
+      "advanced": {
+       "title": "What are embeddings? (free book)",
+       "url": "https://vickiboykis.com/what_are_embeddings/",
+       "note": null,
+       "videoId": null,
+       "type": "Book (free)",
+       "mins": 60,
+       "creator": "Vicki Boykis"
+      }
+     }
+    },
+    {
+     "day": 18,
+     "topic": "Sequences & the birth of attention",
+     "outcome": "Why RNNs struggled and how attention fixed it, which sets up the Transformer.",
+     "options": {
+      "beginner": {
+       "title": "Visualizing a Neural Machine Translation Model (Seq2seq with attention)",
+       "url": "https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 20,
+       "creator": "Jay Alammar"
+      },
+      "intermediate": {
+       "title": "Attention for Neural Networks, Clearly Explained",
+       "url": "https://www.youtube.com/watch?v=PSs6nxngL6k",
+       "note": null,
+       "videoId": "PSs6nxngL6k",
+       "type": "Video",
+       "mins": 15,
+       "creator": "StatQuest"
+      },
+      "advanced": {
+       "title": "Neural Machine Translation by Jointly Learning to Align and Translate",
+       "url": "https://arxiv.org/abs/1409.0473",
+       "note": null,
+       "videoId": null,
+       "type": "Paper",
+       "mins": 45,
+       "creator": "Bahdanau, Cho & Bengio"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "no": 3,
+   "name": "How LLMs Work",
+   "days": [
+    {
+     "day": 19,
+     "topic": "Tokenization",
+     "outcome": "See text the way the model sees it, and why tokens explain many LLM quirks.",
+     "options": {
+      "beginner": {
+       "title": "Tiktokenizer playground (paste text, watch it tokenize)",
+       "url": "https://tiktokenizer.vercel.app/",
+       "note": null,
+       "videoId": null,
+       "type": "Interactive",
+       "mins": 10,
+       "creator": "Tiktokenizer"
+      },
+      "intermediate": {
+       "title": "Summary of the tokenizers (BPE, WordPiece, SentencePiece)",
+       "url": "https://huggingface.co/docs/transformers/tokenizer_summary",
+       "note": null,
+       "videoId": null,
+       "type": "Docs",
+       "mins": 20,
+       "creator": "Hugging Face"
+      },
+      "advanced": {
+       "title": "Let's build the GPT Tokenizer",
+       "url": "https://www.youtube.com/watch?v=zduSFxRajkE",
+       "note": null,
+       "videoId": "zduSFxRajkE",
+       "type": "Video / Hands-on",
+       "mins": 60,
+       "creator": "From your YT Videos list (Karpathy)"
+      }
+     }
+    },
+    {
+     "day": 20,
+     "topic": "Attention, properly",
+     "outcome": "Understand queries, keys and values: the one mechanism behind every modern LLM.",
+     "options": {
+      "beginner": {
+       "title": "Attention in transformers, step-by-step | ch. 6",
+       "url": "https://www.youtube.com/watch?v=eMlx5fFNoYc",
+       "note": null,
+       "videoId": "eMlx5fFNoYc",
+       "type": "Video",
+       "mins": 26,
+       "creator": "3Blue1Brown"
+      },
+      "intermediate": {
+       "title": "Understanding and Coding Self-Attention, Multi-Head Attention, Causal-Attention",
+       "url": "https://magazine.sebastianraschka.com/p/understanding-and-coding-self-attention",
+       "note": null,
+       "videoId": null,
+       "type": "Article / Code",
+       "mins": 40,
+       "creator": "Sebastian Raschka"
+      },
+      "advanced": {
+       "title": "The Transformer Family, Version 2.0",
+       "url": "https://lilianweng.github.io/posts/2023-01-27-the-transformer-family-v2/",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 60,
+       "creator": "Lilian Weng"
+      }
+     }
+    },
+    {
+     "day": 21,
+     "topic": "The Transformer architecture",
+     "outcome": "Put the whole block together: embeddings, attention, MLPs, residuals, layer norm.",
+     "options": {
+      "beginner": {
+       "title": "Transformers, the tech behind LLMs | ch. 5",
+       "url": "https://www.youtube.com/watch?v=wjZofJX0v4M",
+       "note": null,
+       "videoId": "wjZofJX0v4M",
+       "type": "Video",
+       "mins": 27,
+       "creator": "3Blue1Brown"
+      },
+      "intermediate": {
+       "title": "The Illustrated Transformer",
+       "url": "https://jalammar.github.io/illustrated-transformer/",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 30,
+       "creator": "From your 7-Day Reading Plan (Jay Alammar)"
+      },
+      "advanced": {
+       "title": "The Annotated Transformer (Attention Is All You Need, in code)",
+       "url": "https://nlp.seas.harvard.edu/annotated-transformer/",
+       "note": null,
+       "videoId": null,
+       "type": "Paper + Code",
+       "mins": 60,
+       "creator": "Harvard NLP"
+      }
+     }
+    },
+    {
+     "day": 22,
+     "topic": "Decoder-only models (GPT)",
+     "outcome": "Why modern LLMs are decoder-only next-token predictors.",
+     "options": {
+      "beginner": {
+       "title": "Large language models, explained with a minimum of math and jargon",
+       "url": "https://open.substack.com/pub/understandingai/p/large-language-models-explained-with",
+       "note": null,
+       "videoId": null,
+       "type": "Substack",
+       "mins": 25,
+       "creator": "From your 7-Day Reading Plan (Understanding AI)"
+      },
+      "intermediate": {
+       "title": "The Illustrated GPT-2",
+       "url": "https://jalammar.github.io/illustrated-gpt2/",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 30,
+       "creator": "Jay Alammar"
+      },
+      "advanced": {
+       "title": "LLM Visualization (3D walk-through of a GPT)",
+       "url": "https://bbycroft.net/llm",
+       "note": null,
+       "videoId": null,
+       "type": "Interactive",
+       "mins": 30,
+       "creator": "Brendan Bycroft"
+      }
+     }
+    },
+    {
+     "day": 23,
+     "topic": "Build a GPT",
+     "outcome": "Code a small GPT end to end so you understand every tensor.",
+     "options": {
+      "beginner": {
+       "title": "How might LLMs store facts | ch. 7",
+       "url": "https://www.youtube.com/watch?v=9-Jl0dxWQs8",
+       "note": null,
+       "videoId": "9-Jl0dxWQs8",
+       "type": "Video",
+       "mins": 22,
+       "creator": "3Blue1Brown"
+      },
+      "intermediate": {
+       "title": "Coding LLMs from the Ground Up (video course)",
+       "url": "https://magazine.sebastianraschka.com/p/coding-llms-from-the-ground-up",
+       "note": null,
+       "videoId": null,
+       "type": "Video course",
+       "mins": 60,
+       "creator": "Sebastian Raschka"
+      },
+      "advanced": {
+       "title": "Let's build GPT: from scratch, in code, spelled out",
+       "url": "https://www.youtube.com/watch?v=kCc8FmEb1nY",
+       "note": null,
+       "videoId": "kCc8FmEb1nY",
+       "type": "Video / Hands-on",
+       "mins": 116,
+       "creator": "Andrej Karpathy"
+      }
+     }
+    },
+    {
+     "day": 24,
+     "topic": "Modern LLM architectures",
+     "outcome": "MoE, RoPE, GQA and friends: what changed after GPT-2.",
+     "options": {
+      "beginner": {
+       "title": "A Visual Guide to Mixture of Experts (MoE)",
+       "url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-mixture-of-experts",
+       "note": null,
+       "videoId": null,
+       "type": "Substack",
+       "mins": 30,
+       "creator": "Maarten Grootendorst"
+      },
+      "intermediate": {
+       "title": "The Big LLM Architecture Comparison",
+       "url": "https://magazine.sebastianraschka.com/p/the-big-llm-architecture-comparison",
+       "note": null,
+       "videoId": null,
+       "type": "Substack",
+       "mins": 45,
+       "creator": "Sebastian Raschka"
+      },
+      "advanced": {
+       "title": "Rotary Embeddings: A Relative Revolution",
+       "url": "https://blog.eleuther.ai/rotary-embeddings/",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 30,
+       "creator": "EleutherAI"
+      }
+     }
+    },
+    {
+     "day": 25,
+     "topic": "Pretraining & scaling laws",
+     "outcome": "Where LLM knowledge comes from, and why 'bigger + more data' worked.",
+     "options": {
+      "beginner": {
+       "title": "Deep Dive into LLMs like ChatGPT (pretraining chapters, first ~60 min)",
+       "url": "https://www.youtube.com/watch?v=7xTGNNLPyMI",
+       "note": null,
+       "videoId": "7xTGNNLPyMI",
+       "type": "Video",
+       "mins": 60,
+       "creator": "From your YT Videos list (Karpathy)"
+      },
+      "intermediate": {
+       "title": "The Bitter Lesson",
+       "url": "http://www.incompleteideas.net/IncIdeas/BitterLesson.html",
+       "note": null,
+       "videoId": null,
+       "type": "Essay",
+       "mins": 10,
+       "creator": "Rich Sutton"
+      },
+      "advanced": {
+       "title": "Training Compute-Optimal LLMs (Chinchilla)",
+       "url": "https://arxiv.org/abs/2203.15556",
+       "note": null,
+       "videoId": null,
+       "type": "Paper",
+       "mins": 45,
+       "creator": "Hoffmann et al., DeepMind"
+      }
+     }
+    },
+    {
+     "day": 26,
+     "topic": "Decoding & sampling",
+     "outcome": "Temperature, top-k, top-p: control how the model picks each next token.",
+     "options": {
+      "beginner": {
+       "title": "How to generate text: decoding methods for LMs",
+       "url": "https://huggingface.co/blog/how-to-generate",
+       "note": null,
+       "videoId": null,
+       "type": "Article / Code",
+       "mins": 20,
+       "creator": "Hugging Face"
+      },
+      "intermediate": {
+       "title": "Generation configurations: temperature, top-k, top-p, test-time compute",
+       "url": "https://huyenchip.com/2024/01/16/sampling.html",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 30,
+       "creator": "Chip Huyen"
+      },
+      "advanced": {
+       "title": "The Curious Case of Neural Text Degeneration (nucleus sampling)",
+       "url": "https://arxiv.org/abs/1904.09751",
+       "note": null,
+       "videoId": null,
+       "type": "Paper",
+       "mins": 40,
+       "creator": "Holtzman et al."
+      }
+     }
+    },
+    {
+     "day": 27,
+     "topic": "Post-training: SFT & RLHF",
+     "outcome": "How a raw text predictor becomes a helpful assistant.",
+     "options": {
+      "beginner": {
+       "title": "Illustrating Reinforcement Learning from Human Feedback",
+       "url": "https://huggingface.co/blog/rlhf",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 20,
+       "creator": "Hugging Face"
+      },
+      "intermediate": {
+       "title": "RLHF: Reinforcement Learning from Human Feedback",
+       "url": "https://huyenchip.com/2023/05/02/rlhf.html",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 35,
+       "creator": "Chip Huyen"
+      },
+      "advanced": {
+       "title": "Training language models to follow instructions (InstructGPT)",
+       "url": "https://arxiv.org/abs/2203.02155",
+       "note": null,
+       "videoId": null,
+       "type": "Paper",
+       "mins": 50,
+       "creator": "Ouyang et al., OpenAI"
+      }
+     }
+    },
+    {
+     "day": 28,
+     "topic": "Reasoning models",
+     "outcome": "How 'thinking' models are trained and when test-time compute pays off.",
+     "options": {
+      "beginner": {
+       "title": "A Visual Guide to Reasoning LLMs",
+       "url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-reasoning-llms",
+       "note": null,
+       "videoId": null,
+       "type": "Substack",
+       "mins": 30,
+       "creator": "Maarten Grootendorst"
+      },
+      "intermediate": {
+       "title": "Understanding Reasoning LLMs",
+       "url": "https://magazine.sebastianraschka.com/p/understanding-reasoning-llms",
+       "note": null,
+       "videoId": null,
+       "type": "Substack",
+       "mins": 35,
+       "creator": "Sebastian Raschka"
+      },
+      "advanced": {
+       "title": "DeepSeek-R1: Incentivizing Reasoning Capability via RL",
+       "url": "https://arxiv.org/abs/2501.12948",
+       "note": null,
+       "videoId": null,
+       "type": "Paper",
+       "mins": 60,
+       "creator": "DeepSeek-AI"
+      }
+     }
+    },
+    {
+     "day": 29,
+     "topic": "Context windows & long context",
+     "outcome": "Why more context isn't free: limits, cost, and quality decay.",
+     "options": {
+      "beginner": {
+       "title": "Context windows explained (video)",
+       "url": "https://www.youtube.com/watch?v=NHMJ9mqKeMQ",
+       "note": null,
+       "videoId": "NHMJ9mqKeMQ",
+       "type": "Video",
+       "mins": 15,
+       "creator": "From your YT Videos list"
+      },
+      "intermediate": {
+       "title": "Context Rot: How Increasing Input Tokens Impacts LLM Performance",
+       "url": "https://www.trychroma.com/research/context-rot",
+       "note": null,
+       "videoId": null,
+       "type": "Research report",
+       "mins": 25,
+       "creator": "Chroma"
+      },
+      "advanced": {
+       "title": "Lost in the Middle: How Language Models Use Long Contexts",
+       "url": "https://arxiv.org/abs/2307.03172",
+       "note": null,
+       "videoId": null,
+       "type": "Paper",
+       "mins": 40,
+       "creator": "Liu et al."
+      }
+     }
+    },
+    {
+     "day": 30,
+     "topic": "Hallucinations",
+     "outcome": "Why models make things up, and what actually reduces it.",
+     "options": {
+      "beginner": {
+       "title": "Deep Dive into LLMs: 'Hallucinations, tool use, knowledge' chapter",
+       "url": "https://www.youtube.com/watch?v=7xTGNNLPyMI",
+       "note": null,
+       "videoId": "7xTGNNLPyMI",
+       "type": "Video (chapter)",
+       "mins": 20,
+       "creator": "From your YT Videos list (Karpathy)"
+      },
+      "intermediate": {
+       "title": "Why language models hallucinate",
+       "url": "https://openai.com/index/why-language-models-hallucinate/",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 15,
+       "creator": "OpenAI"
+      },
+      "advanced": {
+       "title": "Extrinsic Hallucinations in LLMs",
+       "url": "https://lilianweng.github.io/posts/2024-07-07-hallucination/",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 60,
+       "creator": "Lilian Weng"
+      }
+     }
+    },
+    {
+     "day": 31,
+     "topic": "Choosing a model",
+     "outcome": "Compare models on quality, speed, cost and licence before you build.",
+     "options": {
+      "beginner": {
+       "title": "Artificial Analysis: model leaderboards (quality vs speed vs price)",
+       "url": "https://artificialanalysis.ai/",
+       "note": null,
+       "videoId": null,
+       "type": "Interactive",
+       "mins": 15,
+       "creator": "Artificial Analysis"
+      },
+      "intermediate": {
+       "title": "Choosing the right model",
+       "url": "https://platform.claude.com/docs/en/about-claude/models/choosing-a-model",
+       "note": null,
+       "videoId": null,
+       "type": "Docs",
+       "mins": 15,
+       "creator": "Anthropic"
+      },
+      "advanced": {
+       "title": "AI Engineering book companion repo (ch. 2-4 notes: foundation models & evaluation)",
+       "url": "https://github.com/chiphuyen/aie-book",
+       "note": null,
+       "videoId": null,
+       "type": "Book resources",
+       "mins": 45,
+       "creator": "From your System Design Prep doc (Chip Huyen)"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "no": 4,
+   "name": "Building with LLM APIs",
+   "days": [
+    {
+     "day": 32,
+     "topic": "Prompt engineering fundamentals",
+     "outcome": "Write clear, specific prompts with context, examples and output format.",
+     "options": {
+      "beginner": {
+       "title": "Prompt engineering (video)",
+       "url": "https://www.youtube.com/watch?v=IIY7J7N4tQo",
+       "note": null,
+       "videoId": "IIY7J7N4tQo",
+       "type": "Video",
+       "mins": 20,
+       "creator": "From your YT Videos list"
+      },
+      "intermediate": {
+       "title": "Prompt Engineering Interactive Tutorial",
+       "url": "https://github.com/anthropics/prompt-eng-interactive-tutorial",
+       "note": null,
+       "videoId": null,
+       "type": "Course / Hands-on",
+       "mins": 60,
+       "creator": "Anthropic"
+      },
+      "advanced": {
+       "title": "Prompt Engineering whitepaper",
+       "url": "https://www.kaggle.com/whitepaper-prompt-engineering",
+       "note": null,
+       "videoId": null,
+       "type": "Whitepaper",
+       "mins": 60,
+       "creator": "Lee Boonstra, Google"
+      }
+     }
+    },
+    {
+     "day": 33,
+     "topic": "Advanced prompting techniques",
+     "outcome": "Few-shot, chain-of-thought, ReAct, prompt chaining: when each helps.",
+     "options": {
+      "beginner": {
+       "title": "Prompting techniques overview",
+       "url": "https://www.promptingguide.ai/techniques",
+       "note": null,
+       "videoId": null,
+       "type": "Guide",
+       "mins": 25,
+       "creator": "DAIR.AI Prompting Guide"
+      },
+      "intermediate": {
+       "title": "Claude prompting best practices",
+       "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+       "note": null,
+       "videoId": null,
+       "type": "Docs",
+       "mins": 25,
+       "creator": "From your 7-Day Reading Plan (Anthropic)"
+      },
+      "advanced": {
+       "title": "Prompt Engineering (survey of techniques)",
+       "url": "https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 45,
+       "creator": "Lilian Weng"
+      }
+     }
+    },
+    {
+     "day": 34,
+     "topic": "System prompts & prompt management",
+     "outcome": "Design system prompts, version them, and optimise them systematically.",
+     "options": {
+      "beginner": {
+       "title": "Prompt engineering playlist (pick 2 videos)",
+       "url": "https://www.youtube.com/playlist?list=PLYIE4hvbWhsCR5PnXbbHaYzI2IH2igvfv",
+       "note": null,
+       "videoId": null,
+       "type": "Video playlist",
+       "mins": 25,
+       "creator": "From your YT Videos list"
+      },
+      "intermediate": {
+       "title": "Practice: Prompt Engineering questions (Section 6)",
+       "url": null,
+       "note": "section in your PDF",
+       "videoId": null,
+       "type": "Practice Qs",
+       "mins": 30,
+       "creator": "Your 'System Design Questions' PDF"
+      },
+      "advanced": {
+       "title": "DSPy: programming, not prompting, LMs",
+       "url": "https://dspy.ai/",
+       "note": null,
+       "videoId": null,
+       "type": "Docs / Hands-on",
+       "mins": 45,
+       "creator": "Stanford NLP"
+      }
+     }
+    },
+    {
+     "day": 35,
+     "topic": "Structured outputs",
+     "outcome": "Get reliable JSON out of a model and validate it with schemas.",
+     "options": {
+      "beginner": {
+       "title": "Structured outputs (video)",
+       "url": "https://www.youtube.com/watch?v=3xUW1Do9zOs",
+       "note": null,
+       "videoId": "3xUW1Do9zOs",
+       "type": "Video",
+       "mins": 15,
+       "creator": "From your YT Videos list"
+      },
+      "intermediate": {
+       "title": "Structured model outputs guide",
+       "url": "https://platform.openai.com/docs/guides/structured-outputs",
+       "note": null,
+       "videoId": null,
+       "type": "Docs",
+       "mins": 20,
+       "creator": "OpenAI"
+      },
+      "advanced": {
+       "title": "Say What You Mean: A Response to 'Let Me Speak Freely'",
+       "url": "https://blog.dottxt.co/say-what-you-mean.html",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 25,
+       "creator": ".txt (Outlines team)"
+      }
+     }
+    },
+    {
+     "day": 36,
+     "topic": "Function & tool calling",
+     "outcome": "Let a model call your functions: schemas, arguments, results, loops.",
+     "options": {
+      "beginner": {
+       "title": "Function calling explained (video)",
+       "url": "https://www.youtube.com/watch?v=DUE9FM9gqjk",
+       "note": null,
+       "videoId": "DUE9FM9gqjk",
+       "type": "Video",
+       "mins": 15,
+       "creator": "From your YT Videos list"
+      },
+      "intermediate": {
+       "title": "Tool use with Claude: overview",
+       "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview",
+       "note": null,
+       "videoId": null,
+       "type": "Docs",
+       "mins": 25,
+       "creator": "Anthropic"
+      },
+      "advanced": {
+       "title": "Toolformer: Language Models Can Teach Themselves to Use Tools",
+       "url": "https://arxiv.org/abs/2302.04761",
+       "note": null,
+       "videoId": null,
+       "type": "Paper",
+       "mins": 40,
+       "creator": "Schick et al., Meta"
+      }
+     }
+    },
+    {
+     "day": 37,
+     "topic": "Streaming responses",
+     "outcome": "Stream tokens to users for a snappy UX; handle SSE end to end.",
+     "options": {
+      "beginner": {
+       "title": "Streaming LLM responses (video)",
+       "url": "https://www.youtube.com/watch?v=SvAuh1fuw0M",
+       "note": null,
+       "videoId": "SvAuh1fuw0M",
+       "type": "Video",
+       "mins": 15,
+       "creator": "From your YT Videos list"
+      },
+      "intermediate": {
+       "title": "Streaming Messages",
+       "url": "https://platform.claude.com/docs/en/build-with-claude/streaming",
+       "note": null,
+       "videoId": null,
+       "type": "Docs",
+       "mins": 20,
+       "creator": "Anthropic"
+      },
+      "advanced": {
+       "title": "Practice: Python / Backend questions (Section 4: streaming, async, batching)",
+       "url": null,
+       "note": "section in your PDF",
+       "videoId": null,
+       "type": "Practice Qs",
+       "mins": 30,
+       "creator": "Your 'System Design Questions' PDF"
+      }
+     }
+    },
+    {
+     "day": 38,
+     "topic": "Cost control: caching & batching",
+     "outcome": "Cut latency and cost with prompt caching, batch APIs and smart routing.",
+     "options": {
+      "beginner": {
+       "title": "Prompt caching",
+       "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-caching",
+       "note": null,
+       "videoId": null,
+       "type": "Docs",
+       "mins": 20,
+       "creator": "Anthropic"
+      },
+      "intermediate": {
+       "title": "Prompt caching guide",
+       "url": "https://platform.openai.com/docs/guides/prompt-caching",
+       "note": null,
+       "videoId": null,
+       "type": "Docs",
+       "mins": 15,
+       "creator": "OpenAI"
+      },
+      "advanced": {
+       "title": "Practice: LLM Systems questions (Section 1: caching, routing, cost)",
+       "url": null,
+       "note": "section in your PDF",
+       "videoId": null,
+       "type": "Practice Qs",
+       "mins": 30,
+       "creator": "Your 'System Design Questions' PDF"
+      }
+     }
+    },
+    {
+     "day": 39,
+     "topic": "Multimodal LLMs",
+     "outcome": "Work with images, PDFs and audio, and understand how vision models work.",
+     "options": {
+      "beginner": {
+       "title": "Vision with Claude",
+       "url": "https://platform.claude.com/docs/en/build-with-claude/vision",
+       "note": null,
+       "videoId": null,
+       "type": "Docs",
+       "mins": 15,
+       "creator": "Anthropic"
+      },
+      "intermediate": {
+       "title": "Multimodality and Large Multimodal Models",
+       "url": "https://huyenchip.com/2023/10/10/multimodal.html",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 45,
+       "creator": "Chip Huyen"
+      },
+      "advanced": {
+       "title": "Understanding Multimodal LLMs",
+       "url": "https://magazine.sebastianraschka.com/p/understanding-multimodal-llms",
+       "note": null,
+       "videoId": null,
+       "type": "Substack",
+       "mins": 45,
+       "creator": "Sebastian Raschka"
+      }
+     }
+    },
+    {
+     "day": 40,
+     "topic": "Patterns for LLM applications",
+     "outcome": "Step back and learn the recurring patterns in real LLM products.",
+     "options": {
+      "beginner": {
+       "title": "Building Systems with the ChatGPT API (short course)",
+       "url": "https://www.deeplearning.ai/short-courses/building-systems-with-chatgpt/",
+       "note": null,
+       "videoId": null,
+       "type": "Course",
+       "mins": 60,
+       "creator": "DeepLearning.AI"
+      },
+      "intermediate": {
+       "title": "Patterns for Building LLM-based Systems & Products",
+       "url": "https://eugeneyan.com/writing/llm-patterns/",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 60,
+       "creator": "Eugene Yan"
+      },
+      "advanced": {
+       "title": "What We've Learned From A Year of Building with LLMs",
+       "url": "https://applied-llms.org/",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 60,
+       "creator": "Yan, Bischof, Frye, Husain, Liu, Shankar"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "no": 5,
+   "name": "Embeddings, Retrieval & RAG",
+   "days": [
+    {
+     "day": 41,
+     "topic": "Sentence embeddings",
+     "outcome": "Embed whole sentences and documents for search and clustering.",
+     "options": {
+      "beginner": {
+       "title": "Embeddings explained (video)",
+       "url": "https://www.youtube.com/watch?v=ERibwqs9p38",
+       "note": null,
+       "videoId": "ERibwqs9p38",
+       "type": "Video",
+       "mins": 15,
+       "creator": "From your YT Videos list"
+      },
+      "intermediate": {
+       "title": "Embeddings: What they are and why they matter",
+       "url": "https://simonwillison.net/2023/Oct/23/embeddings/",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 30,
+       "creator": "Simon Willison"
+      },
+      "advanced": {
+       "title": "Sentence-BERT: Sentence Embeddings using Siamese Networks",
+       "url": "https://arxiv.org/abs/1908.10084",
+       "note": null,
+       "videoId": null,
+       "type": "Paper",
+       "mins": 40,
+       "creator": "Reimers & Gurevych"
+      }
+     }
+    },
+    {
+     "day": 42,
+     "topic": "Semantic search & picking an embedding model",
+     "outcome": "Similarity metrics, benchmarks (MTEB) and trade-offs in embedding models.",
+     "options": {
+      "beginner": {
+       "title": "Semantic search with embeddings (video)",
+       "url": "https://youtu.be/9rYOLzoDNrM",
+       "note": null,
+       "videoId": "9rYOLzoDNrM",
+       "type": "Video",
+       "mins": 15,
+       "creator": "From your YT Videos list"
+      },
+      "intermediate": {
+       "title": "MTEB: Massive Text Embedding Benchmark",
+       "url": "https://huggingface.co/blog/mteb",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 15,
+       "creator": "Hugging Face"
+      },
+      "advanced": {
+       "title": "Introduction to Matryoshka Embedding Models",
+       "url": "https://huggingface.co/blog/matryoshka",
+       "note": null,
+       "videoId": null,
+       "type": "Article / Code",
+       "mins": 25,
+       "creator": "Hugging Face"
+      }
+     }
+    },
+    {
+     "day": 43,
+     "topic": "RAG: the core idea",
+     "outcome": "Retrieve, then generate: ground answers in your own data.",
+     "options": {
+      "beginner": {
+       "title": "Learn RAG From Scratch (first 30 min)",
+       "url": "https://www.youtube.com/watch?v=sVcwVQRHIc8",
+       "note": null,
+       "videoId": "sVcwVQRHIc8",
+       "type": "Video",
+       "mins": 30,
+       "creator": "From your YT Videos list (Lance Martin)"
+      },
+      "intermediate": {
+       "title": "Retrieval-Augmented Generation (RAG) explained",
+       "url": "https://www.pinecone.io/learn/retrieval-augmented-generation/",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 20,
+       "creator": "Pinecone"
+      },
+      "advanced": {
+       "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+       "url": "https://arxiv.org/abs/2005.11401",
+       "note": null,
+       "videoId": null,
+       "type": "Paper",
+       "mins": 45,
+       "creator": "Lewis et al., Meta"
+      }
+     }
+    },
+    {
+     "day": 44,
+     "topic": "Vector databases & ANN indexes",
+     "outcome": "How vector stores find nearest neighbours fast across millions of vectors.",
+     "options": {
+      "beginner": {
+       "title": "Vector databases explained (video)",
+       "url": "https://www.youtube.com/watch?v=8KrTO9bS91s",
+       "note": null,
+       "videoId": "8KrTO9bS91s",
+       "type": "Video",
+       "mins": 15,
+       "creator": "From your YT Videos list"
+      },
+      "intermediate": {
+       "title": "What is a Vector Database?",
+       "url": "https://www.pinecone.io/learn/vector-database/",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 20,
+       "creator": "Pinecone"
+      },
+      "advanced": {
+       "title": "Hierarchical Navigable Small Worlds (HNSW)",
+       "url": "https://www.pinecone.io/learn/series/faiss/hnsw/",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 35,
+       "creator": "Pinecone (Faiss series)"
+      }
+     }
+    },
+    {
+     "day": 45,
+     "topic": "Chunking strategies",
+     "outcome": "Split documents so retrieval finds the right pieces.",
+     "options": {
+      "beginner": {
+       "title": "Chunking Strategies for LLM Applications",
+       "url": "https://www.pinecone.io/learn/chunking-strategies/",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 20,
+       "creator": "Pinecone"
+      },
+      "intermediate": {
+       "title": "5 Levels of Text Splitting (notebook)",
+       "url": "https://github.com/FullStackRetrieval-com/RetrievalTutorials/blob/main/tutorials/LevelsOfTextSplitting/5_Levels_Of_Text_Splitting.ipynb",
+       "note": null,
+       "videoId": null,
+       "type": "Notebook / Hands-on",
+       "mins": 40,
+       "creator": "Greg Kamradt"
+      },
+      "advanced": {
+       "title": "Evaluating Chunking Strategies for Retrieval",
+       "url": "https://www.trychroma.com/research/evaluating-chunking",
+       "note": null,
+       "videoId": null,
+       "type": "Research report",
+       "mins": 30,
+       "creator": "Chroma"
+      }
+     }
+    },
+    {
+     "day": 46,
+     "topic": "Build a RAG pipeline",
+     "outcome": "Hands-on: ingest, embed, retrieve, generate.",
+     "options": {
+      "beginner": {
+       "title": "RAG video playlist (pick 2-3 videos)",
+       "url": "https://www.youtube.com/playlist?list=PLNIQLFWpQMRUMjxfe8o6g3uzJ6LH_VotY",
+       "note": null,
+       "videoId": null,
+       "type": "Video playlist",
+       "mins": 30,
+       "creator": "From your YT Videos list"
+      },
+      "intermediate": {
+       "title": "RAG From Scratch (short videos + notebooks)",
+       "url": "https://github.com/langchain-ai/rag-from-scratch",
+       "note": null,
+       "videoId": null,
+       "type": "Code / Hands-on",
+       "mins": 45,
+       "creator": "LangChain"
+      },
+      "advanced": {
+       "title": "RAG deep-dive (video)",
+       "url": "https://www.youtube.com/watch?v=vAK0iqA6-QI",
+       "note": null,
+       "videoId": "vAK0iqA6-QI",
+       "type": "Video",
+       "mins": 40,
+       "creator": "From your YT Videos list"
+      }
+     }
+    },
+    {
+     "day": 47,
+     "topic": "Hybrid search: keywords + vectors",
+     "outcome": "Combine BM25 and dense retrieval; learn contextual retrieval.",
+     "options": {
+      "beginner": {
+       "title": "Hybrid Search Explained",
+       "url": "https://weaviate.io/blog/hybrid-search-explained",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 15,
+       "creator": "Weaviate"
+      },
+      "intermediate": {
+       "title": "Getting Started with Hybrid Search",
+       "url": "https://www.pinecone.io/learn/hybrid-search-intro/",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 25,
+       "creator": "Pinecone"
+      },
+      "advanced": {
+       "title": "Introducing Contextual Retrieval",
+       "url": "https://www.anthropic.com/news/contextual-retrieval",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 25,
+       "creator": "Anthropic"
+      }
+     }
+    },
+    {
+     "day": 48,
+     "topic": "Rerankers",
+     "outcome": "Add a second-stage ranker to sharply improve what reaches the prompt.",
+     "options": {
+      "beginner": {
+       "title": "Rerankers and Two-Stage Retrieval",
+       "url": "https://www.pinecone.io/learn/series/rag/rerankers/",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 20,
+       "creator": "Pinecone"
+      },
+      "intermediate": {
+       "title": "Practice: RAG & Vector DB questions (Section 2)",
+       "url": null,
+       "note": "section in your PDF",
+       "videoId": null,
+       "type": "Practice Qs",
+       "mins": 30,
+       "creator": "Your 'System Design Questions' PDF"
+      },
+      "advanced": {
+       "title": "ColBERT: Efficient Passage Search via Late Interaction",
+       "url": "https://arxiv.org/abs/2004.12832",
+       "note": null,
+       "videoId": null,
+       "type": "Paper",
+       "mins": 45,
+       "creator": "Khattab & Zaharia"
+      }
+     }
+    },
+    {
+     "day": 49,
+     "topic": "Advanced RAG: query rewriting & agentic RAG",
+     "outcome": "Fix bad retrieval with query transforms, HyDE and agent-driven search.",
+     "options": {
+      "beginner": {
+       "title": "What is Agentic RAG",
+       "url": "https://weaviate.io/blog/what-is-agentic-rag",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 15,
+       "creator": "Weaviate"
+      },
+      "intermediate": {
+       "title": "Systematically Improving Your RAG",
+       "url": "https://jxnl.co/writing/2024/05/22/systematically-improving-your-rag/",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 30,
+       "creator": "Jason Liu"
+      },
+      "advanced": {
+       "title": "Precise Zero-Shot Dense Retrieval without Relevance Labels (HyDE)",
+       "url": "https://arxiv.org/abs/2212.10496",
+       "note": null,
+       "videoId": null,
+       "type": "Paper",
+       "mins": 35,
+       "creator": "Gao et al."
+      }
+     }
+    },
+    {
+     "day": 50,
+     "topic": "GraphRAG & document RAG",
+     "outcome": "Go beyond text chunks: knowledge graphs and visual document retrieval.",
+     "options": {
+      "beginner": {
+       "title": "GraphRAG: Unlocking LLM discovery on narrative private data",
+       "url": "https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-data/",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 20,
+       "creator": "Microsoft Research"
+      },
+      "intermediate": {
+       "title": "ColPali: Efficient Document Retrieval with Vision Language Models",
+       "url": "https://huggingface.co/blog/manu/colpali",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 25,
+       "creator": "Hugging Face"
+      },
+      "advanced": {
+       "title": "Late Chunking in Long-Context Embedding Models",
+       "url": "https://jina.ai/news/late-chunking-in-long-context-embedding-models/",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 30,
+       "creator": "Jina AI"
+      }
+     }
+    },
+    {
+     "day": 51,
+     "topic": "Evaluating RAG",
+     "outcome": "Measure retrieval and answer quality separately, with numbers you can trust.",
+     "options": {
+      "beginner": {
+       "title": "Ragas docs: Get started",
+       "url": "https://docs.ragas.io/en/stable/",
+       "note": null,
+       "videoId": null,
+       "type": "Docs",
+       "mins": 20,
+       "creator": "Ragas"
+      },
+      "intermediate": {
+       "title": "Section 4: AI Evals (Q1-Q10: RAGAS, faithfulness, retrieval metrics)",
+       "url": null,
+       "note": "section in your PDF",
+       "videoId": null,
+       "type": "Interview Q&A",
+       "mins": 35,
+       "creator": "Your 'AI in Production' Interview Prep PDF"
+      },
+      "advanced": {
+       "title": "RAGAS: Automated Evaluation of Retrieval Augmented Generation",
+       "url": "https://arxiv.org/abs/2309.15217",
+       "note": null,
+       "videoId": null,
+       "type": "Paper",
+       "mins": 35,
+       "creator": "Es et al."
+      }
+     }
+    },
+    {
+     "day": 52,
+     "topic": "RAG vs fine-tuning vs long context",
+     "outcome": "Decide which lever fixes which problem.",
+     "options": {
+      "beginner": {
+       "title": "Fine-Tuning vs RAG (video)",
+       "url": "https://youtu.be/zYGDpG-pTho",
+       "note": null,
+       "videoId": "zYGDpG-pTho",
+       "type": "Video",
+       "mins": 15,
+       "creator": "From your YT Videos list"
+      },
+      "intermediate": {
+       "title": "Fine tuning is for form, not facts",
+       "url": "https://www.anyscale.com/blog/fine-tuning-is-for-form-not-facts",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 15,
+       "creator": "Anyscale"
+      },
+      "advanced": {
+       "title": "Section 6: Knowledge, RAG, and data boundaries",
+       "url": null,
+       "note": "section in your PDF",
+       "videoId": null,
+       "type": "Checklist",
+       "mins": 30,
+       "creator": "Your 'Production-Ready AI Agent Checklist' PDF"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "no": 6,
+   "name": "AI Agents",
+   "days": [
+    {
+     "day": 53,
+     "topic": "What is an AI agent?",
+     "outcome": "Workflows vs agents, and when you actually need autonomy.",
+     "options": {
+      "beginner": {
+       "title": "AI Agents explained (video)",
+       "url": "https://youtu.be/ZaPbP9DwBOE",
+       "note": null,
+       "videoId": "ZaPbP9DwBOE",
+       "type": "Video",
+       "mins": 20,
+       "creator": "From your YT Videos list"
+      },
+      "intermediate": {
+       "title": "Building effective agents",
+       "url": "https://www.anthropic.com/engineering/building-effective-agents",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 25,
+       "creator": "Anthropic"
+      },
+      "advanced": {
+       "title": "LLM Powered Autonomous Agents",
+       "url": "https://lilianweng.github.io/posts/2023-06-23-agent/",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 50,
+       "creator": "Lilian Weng"
+      }
+     }
+    },
+    {
+     "day": 54,
+     "topic": "Agentic design patterns",
+     "outcome": "Prompt chaining, routing, parallelisation, orchestrator-workers, evaluator-optimizer.",
+     "options": {
+      "beginner": {
+       "title": "Agentic workflows (video)",
+       "url": "https://www.youtube.com/watch?v=4RtKGasvNC0",
+       "note": null,
+       "videoId": "4RtKGasvNC0",
+       "type": "Video",
+       "mins": 20,
+       "creator": "From your YT Videos list"
+      },
+      "intermediate": {
+       "title": "Zero to One: Learning Agentic Patterns",
+       "url": "https://www.philschmid.de/agentic-pattern",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 25,
+       "creator": "From your 7-Day Reading Plan (Phil Schmid)"
+      },
+      "advanced": {
+       "title": "Agentic AI (course)",
+       "url": "https://www.deeplearning.ai/courses/agentic-ai",
+       "note": null,
+       "videoId": null,
+       "type": "Course",
+       "mins": 60,
+       "creator": "Andrew Ng, DeepLearning.AI"
+      }
+     }
+    },
+    {
+     "day": 55,
+     "topic": "The agent loop from scratch",
+     "outcome": "Build a think-act-observe loop yourself before using a framework.",
+     "options": {
+      "beginner": {
+       "title": "A Visual Guide to LLM Agents",
+       "url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-llm-agents",
+       "note": null,
+       "videoId": null,
+       "type": "Substack",
+       "mins": 35,
+       "creator": "Maarten Grootendorst"
+      },
+      "intermediate": {
+       "title": "Hugging Face Agents Course: Unit 1",
+       "url": "https://huggingface.co/learn/agents-course/unit0/introduction",
+       "note": null,
+       "videoId": null,
+       "type": "Course / Hands-on",
+       "mins": 60,
+       "creator": "Hugging Face"
+      },
+      "advanced": {
+       "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+       "url": "https://arxiv.org/abs/2210.03629",
+       "note": null,
+       "videoId": null,
+       "type": "Paper",
+       "mins": 40,
+       "creator": "Yao et al."
+      }
+     }
+    },
+    {
+     "day": 56,
+     "topic": "Designing tools for agents",
+     "outcome": "Tool names, descriptions and outputs make or break an agent.",
+     "options": {
+      "beginner": {
+       "title": "A practical guide to building agents (PDF)",
+       "url": "https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf",
+       "note": null,
+       "videoId": null,
+       "type": "Guide",
+       "mins": 30,
+       "creator": "OpenAI"
+      },
+      "intermediate": {
+       "title": "Writing effective tools for agents, with agents",
+       "url": "https://www.anthropic.com/engineering/writing-tools-for-agents",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 25,
+       "creator": "Anthropic"
+      },
+      "advanced": {
+       "title": "Context engineering for tools (cookbook)",
+       "url": "https://platform.claude.com/cookbook/tool-use-context-engineering-context-engineering-tools",
+       "note": null,
+       "videoId": null,
+       "type": "Notebook / Hands-on",
+       "mins": 45,
+       "creator": "From your 7-Day Reading Plan (Anthropic)"
+      }
+     }
+    },
+    {
+     "day": 57,
+     "topic": "Model Context Protocol (MCP)",
+     "outcome": "The open standard for plugging tools and data into any AI app.",
+     "options": {
+      "beginner": {
+       "title": "MCP explained (video)",
+       "url": "https://www.youtube.com/watch?v=io02ZM0ADqM",
+       "note": null,
+       "videoId": "io02ZM0ADqM",
+       "type": "Video",
+       "mins": 20,
+       "creator": "From your YT Videos list"
+      },
+      "intermediate": {
+       "title": "What is the Model Context Protocol?",
+       "url": "https://modelcontextprotocol.io/docs/getting-started/intro",
+       "note": null,
+       "videoId": null,
+       "type": "Docs",
+       "mins": 15,
+       "creator": "MCP (official)"
+      },
+      "advanced": {
+       "title": "MCP: Advanced Topics (course)",
+       "url": "https://anthropic.skilljar.com/model-context-protocol-advanced-topics",
+       "note": null,
+       "videoId": null,
+       "type": "Course",
+       "mins": 60,
+       "creator": "From your 7-Day Reading Plan (Anthropic Academy)"
+      }
+     }
+    },
+    {
+     "day": 58,
+     "topic": "Build an MCP server",
+     "outcome": "Hands-on: expose your own tools and resources over MCP.",
+     "options": {
+      "beginner": {
+       "title": "MCP video playlist (pick the build-a-server videos)",
+       "url": "https://www.youtube.com/playlist?list=PL6tW9BrhiPTCDteflzehKS6Cn3a79-iCs",
+       "note": null,
+       "videoId": null,
+       "type": "Video playlist",
+       "mins": 30,
+       "creator": "From your YT Videos list"
+      },
+      "intermediate": {
+       "title": "Build an MCP server (official tutorial)",
+       "url": "https://modelcontextprotocol.io/docs/develop/build-server",
+       "note": null,
+       "videoId": null,
+       "type": "Docs / Hands-on",
+       "mins": 45,
+       "creator": "MCP (official)"
+      },
+      "advanced": {
+       "title": "Section 5: Deployment, MCP server deployment sub-section (transports, OAuth, scaling)",
+       "url": null,
+       "note": "section in your PDF",
+       "videoId": null,
+       "type": "Interview Q&A",
+       "mins": 40,
+       "creator": "Your 'AI in Production' Interview Prep PDF"
+      }
+     }
+    },
+    {
+     "day": 59,
+     "topic": "Context engineering",
+     "outcome": "Decide what goes into the context window at each step, and what stays out.",
+     "options": {
+      "beginner": {
+       "title": "Context Engineering for Agents",
+       "url": "https://blog.langchain.com/context-engineering-for-agents/",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 20,
+       "creator": "LangChain"
+      },
+      "intermediate": {
+       "title": "Effective context engineering for AI agents",
+       "url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 25,
+       "creator": "Anthropic"
+      },
+      "advanced": {
+       "title": "Context Engineering for AI Agents: Lessons from Building Manus",
+       "url": "https://manus.im/blog/Context-Engineering-for-AI-Agents-Lessons-from-Building-Manus",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 30,
+       "creator": "Manus"
+      }
+     }
+    },
+    {
+     "day": 60,
+     "topic": "Agent memory",
+     "outcome": "Short-term vs long-term memory and how agents remember across sessions.",
+     "options": {
+      "beginner": {
+       "title": "Memory systems for agents (video)",
+       "url": "https://www.youtube.com/watch?v=RQ5HzSAx27I",
+       "note": null,
+       "videoId": "RQ5HzSAx27I",
+       "type": "Video",
+       "mins": 20,
+       "creator": "From your YT Videos list"
+      },
+      "intermediate": {
+       "title": "Agent Memory: The 7 Types You Should Know",
+       "url": "https://jamwithai.substack.com/p/agent-memory-the-7-types-you-should",
+       "note": null,
+       "videoId": null,
+       "type": "Substack",
+       "mins": 20,
+       "creator": "From your 7-Day Reading Plan (Jam with AI)"
+      },
+      "advanced": {
+       "title": "MemGPT: Towards LLMs as Operating Systems",
+       "url": "https://arxiv.org/abs/2310.08560",
+       "note": null,
+       "videoId": null,
+       "type": "Paper",
+       "mins": 40,
+       "creator": "Packer et al."
+      }
+     }
+    },
+    {
+     "day": 61,
+     "topic": "Long-running agents & harnesses",
+     "outcome": "Keep agents on track over hours: checkpoints, progress files, verification.",
+     "options": {
+      "beginner": {
+       "title": "Designing agentic loops",
+       "url": "https://simonwillison.net/2025/Sep/30/designing-agentic-loops/",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 15,
+       "creator": "Simon Willison"
+      },
+      "intermediate": {
+       "title": "Effective harnesses for long-running agents",
+       "url": "https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 25,
+       "creator": "From your 7-Day Reading Plan (Anthropic)"
+      },
+      "advanced": {
+       "title": "Harness design for long-running apps",
+       "url": "https://www.anthropic.com/engineering/harness-design-long-running-apps",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 30,
+       "creator": "From your 7-Day Reading Plan (Anthropic)"
+      }
+     }
+    },
+    {
+     "day": 62,
+     "topic": "Multi-agent systems",
+     "outcome": "When multiple agents help, when they hurt, and how to design them.",
+     "options": {
+      "beginner": {
+       "title": "Don't Build Multi-Agents",
+       "url": "https://cognition.com/blog/dont-build-multi-agents",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 15,
+       "creator": "Cognition"
+      },
+      "intermediate": {
+       "title": "How we built our multi-agent research system",
+       "url": "https://www.anthropic.com/engineering/multi-agent-research-system",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 30,
+       "creator": "Anthropic"
+      },
+      "advanced": {
+       "title": "Why Do Multi-Agent LLM Systems Fail?",
+       "url": "https://arxiv.org/abs/2503.13657",
+       "note": null,
+       "videoId": null,
+       "type": "Paper",
+       "mins": 40,
+       "creator": "Cemri et al., UC Berkeley"
+      }
+     }
+    },
+    {
+     "day": 63,
+     "topic": "Agent frameworks",
+     "outcome": "Know the major frameworks and when a plain loop is enough.",
+     "options": {
+      "beginner": {
+       "title": "AI Agents video playlist (pick a framework walkthrough)",
+       "url": "https://www.youtube.com/playlist?list=PLbTgoLX62Fav6hQfOSvy0akmS_Th7ZxBM",
+       "note": null,
+       "videoId": null,
+       "type": "Video playlist",
+       "mins": 30,
+       "creator": "From your YT Videos list"
+      },
+      "intermediate": {
+       "title": "Introduction to LangGraph",
+       "url": "https://academy.langchain.com/courses/intro-to-langgraph",
+       "note": null,
+       "videoId": null,
+       "type": "Course / Hands-on",
+       "mins": 60,
+       "creator": "LangChain Academy"
+      },
+      "advanced": {
+       "title": "12-Factor Agents: principles for production LLM software",
+       "url": "https://github.com/humanlayer/12-factor-agents",
+       "note": null,
+       "videoId": null,
+       "type": "Guide",
+       "mins": 40,
+       "creator": "HumanLayer (Dex Horthy)"
+      }
+     }
+    },
+    {
+     "day": 64,
+     "topic": "Agent Skills & code execution",
+     "outcome": "Give agents reusable skills and let them write code instead of calling 100 tools.",
+     "options": {
+      "beginner": {
+       "title": "Equipping agents for the real world with Agent Skills",
+       "url": "https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 20,
+       "creator": "Anthropic"
+      },
+      "intermediate": {
+       "title": "Code execution with MCP: building more efficient agents",
+       "url": "https://www.anthropic.com/engineering/code-execution-with-mcp",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 20,
+       "creator": "Anthropic"
+      },
+      "advanced": {
+       "title": "anthropics/skills: example skills (read 2, write 1)",
+       "url": "https://github.com/anthropics/skills",
+       "note": null,
+       "videoId": null,
+       "type": "Code / Hands-on",
+       "mins": 45,
+       "creator": "Anthropic"
+      }
+     }
+    },
+    {
+     "day": 65,
+     "topic": "Coding agents",
+     "outcome": "Use and understand coding agents: how they plan, edit and verify.",
+     "options": {
+      "beginner": {
+       "title": "Claude Code: Best practices for agentic coding",
+       "url": "https://www.anthropic.com/engineering/claude-code-best-practices",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 25,
+       "creator": "Anthropic"
+      },
+      "intermediate": {
+       "title": "Vibe engineering",
+       "url": "https://simonwillison.net/2025/Oct/7/vibe-engineering/",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 15,
+       "creator": "Simon Willison"
+      },
+      "advanced": {
+       "title": "SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering",
+       "url": "https://arxiv.org/abs/2405.15793",
+       "note": null,
+       "videoId": null,
+       "type": "Paper",
+       "mins": 45,
+       "creator": "Yang et al., Princeton"
+      }
+     }
+    },
+    {
+     "day": 66,
+     "topic": "Computer-use & browser agents",
+     "outcome": "Agents that see screens and click: capabilities and risks.",
+     "options": {
+      "beginner": {
+       "title": "Computer-Using Agent",
+       "url": "https://openai.com/index/computer-using-agent/",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 15,
+       "creator": "OpenAI"
+      },
+      "intermediate": {
+       "title": "Computer use tool",
+       "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool",
+       "note": null,
+       "videoId": null,
+       "type": "Docs",
+       "mins": 25,
+       "creator": "Anthropic"
+      },
+      "advanced": {
+       "title": "Mitigating the risk of prompt injections in browser use",
+       "url": "https://www.anthropic.com/news/prompt-injection-defenses",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 20,
+       "creator": "Anthropic"
+      }
+     }
+    },
+    {
+     "day": 67,
+     "topic": "Voice agents",
+     "outcome": "Speech-to-text, LLM, text-to-speech, and the latency budget that ties them together.",
+     "options": {
+      "beginner": {
+       "title": "Voice AI & Voice Agents: An Illustrated Primer",
+       "url": "https://voiceaiandvoiceagents.com/",
+       "note": null,
+       "videoId": null,
+       "type": "Guide",
+       "mins": 45,
+       "creator": "Kwindla Hultman Kramer (Daily / Pipecat)"
+      },
+      "intermediate": {
+       "title": "Build Your Own Voice Agent (hands-on)",
+       "url": "https://jamwithai.substack.com/p/build-your-own-voice-agent",
+       "note": null,
+       "videoId": null,
+       "type": "Substack / Hands-on",
+       "mins": 45,
+       "creator": "From your 7-Day Reading Plan (Jam with AI)"
+      },
+      "advanced": {
+       "title": "Pipecat docs: build a real-time voice pipeline",
+       "url": "https://docs.pipecat.ai/",
+       "note": null,
+       "videoId": null,
+       "type": "Docs / Hands-on",
+       "mins": 60,
+       "creator": "Pipecat"
+      }
+     }
+    },
+    {
+     "day": 68,
+     "topic": "Agent interoperability (A2A)",
+     "outcome": "How agents talk to other agents, and how A2A relates to MCP.",
+     "options": {
+      "beginner": {
+       "title": "Announcing the Agent2Agent Protocol (A2A)",
+       "url": "https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 15,
+       "creator": "Google"
+      },
+      "intermediate": {
+       "title": "A2A Protocol docs",
+       "url": "https://a2a-protocol.org/latest/",
+       "note": null,
+       "videoId": null,
+       "type": "Docs",
+       "mins": 30,
+       "creator": "Linux Foundation A2A project"
+      },
+      "advanced": {
+       "title": "MCP Specification (read Architecture + Security sections)",
+       "url": "https://modelcontextprotocol.io/specification/2025-06-18",
+       "note": null,
+       "videoId": null,
+       "type": "Spec",
+       "mins": 45,
+       "creator": "MCP (official)"
+      }
+     }
+    },
+    {
+     "day": 69,
+     "topic": "Checkpoint: agents in production",
+     "outcome": "Review day. Test yourself on agent design, orchestration and failure handling.",
+     "options": {
+      "beginner": {
+       "title": "Practice: AI Agents questions (Section 5)",
+       "url": null,
+       "note": "section in your PDF",
+       "videoId": null,
+       "type": "Practice Qs",
+       "mins": 30,
+       "creator": "Your 'System Design Questions' PDF"
+      },
+      "intermediate": {
+       "title": "Section 7: Prompt, tools, and agent orchestration",
+       "url": null,
+       "note": "section in your PDF",
+       "videoId": null,
+       "type": "Checklist",
+       "mins": 30,
+       "creator": "Your 'Production-Ready AI Agent Checklist' PDF"
+      },
+      "advanced": {
+       "title": "Section 0: Critical ship/no-ship gates (apply to an agent you built)",
+       "url": null,
+       "note": "section in your PDF",
+       "videoId": null,
+       "type": "Checklist",
+       "mins": 40,
+       "creator": "Your 'Production-Ready AI Agent Checklist' PDF"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "no": 7,
+   "name": "Evals & Observability",
+   "days": [
+    {
+     "day": 70,
+     "topic": "Why evals matter",
+     "outcome": "Evals are how you know your AI product works, and how you improve it.",
+     "options": {
+      "beginner": {
+       "title": "Eval frameworks video playlist (first 2 videos)",
+       "url": "https://www.youtube.com/playlist?list=PL9omX6impEuMgDFCK_NleIB0sMzKs2boI",
+       "note": null,
+       "videoId": null,
+       "type": "Video playlist",
+       "mins": 25,
+       "creator": "From your YT Videos list"
+      },
+      "intermediate": {
+       "title": "Your AI Product Needs Evals",
+       "url": "https://hamel.dev/blog/posts/evals/",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 30,
+       "creator": "Hamel Husain"
+      },
+      "advanced": {
+       "title": "Demystifying evals for AI agents",
+       "url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 30,
+       "creator": "Anthropic"
+      }
+     }
+    },
+    {
+     "day": 71,
+     "topic": "Error analysis: the eval workflow",
+     "outcome": "Look at your data, label failures, and build evals from real errors.",
+     "options": {
+      "beginner": {
+       "title": "Frequently Asked Questions (And Answers) About AI Evals",
+       "url": "https://hamel.dev/blog/posts/evals-faq/",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 30,
+       "creator": "Hamel Husain & Shreya Shankar"
+      },
+      "intermediate": {
+       "title": "A Field Guide to Rapidly Improving AI Products",
+       "url": "https://hamel.dev/blog/posts/field-guide/",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 30,
+       "creator": "Hamel Husain"
+      },
+      "advanced": {
+       "title": "An LLM-as-Judge Won't Save The Product; Fixing Your Process Will",
+       "url": "https://eugeneyan.com/writing/eval-process/",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 20,
+       "creator": "Eugene Yan"
+      }
+     }
+    },
+    {
+     "day": 72,
+     "topic": "LLM-as-a-judge",
+     "outcome": "Use models to grade models, and make sure the judge agrees with humans.",
+     "options": {
+      "beginner": {
+       "title": "Using LLM-as-a-Judge For Evaluation: A Complete Guide",
+       "url": "https://hamel.dev/blog/posts/llm-judge/",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 30,
+       "creator": "Hamel Husain"
+      },
+      "intermediate": {
+       "title": "Evaluating the Effectiveness of LLM-Evaluators",
+       "url": "https://eugeneyan.com/writing/llm-evaluators/",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 45,
+       "creator": "Eugene Yan"
+      },
+      "advanced": {
+       "title": "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena",
+       "url": "https://arxiv.org/abs/2306.05685",
+       "note": null,
+       "videoId": null,
+       "type": "Paper",
+       "mins": 40,
+       "creator": "Zheng et al., LMSYS"
+      }
+     }
+    },
+    {
+     "day": 73,
+     "topic": "Eval tooling, hands-on",
+     "outcome": "Wire evals into your workflow with an open-source framework.",
+     "options": {
+      "beginner": {
+       "title": "promptfoo: Getting started",
+       "url": "https://www.promptfoo.dev/docs/getting-started/",
+       "note": null,
+       "videoId": null,
+       "type": "Docs / Hands-on",
+       "mins": 30,
+       "creator": "promptfoo"
+      },
+      "intermediate": {
+       "title": "DeepEval: Getting started",
+       "url": "https://deepeval.com/docs/getting-started",
+       "note": null,
+       "videoId": null,
+       "type": "Docs / Hands-on",
+       "mins": 30,
+       "creator": "Confident AI"
+      },
+      "advanced": {
+       "title": "Inspect: an eval framework (tutorial)",
+       "url": "https://inspect.aisi.org.uk/",
+       "note": null,
+       "videoId": null,
+       "type": "Docs / Hands-on",
+       "mins": 45,
+       "creator": "UK AI Security Institute"
+      }
+     }
+    },
+    {
+     "day": 74,
+     "topic": "Benchmarks & eval statistics",
+     "outcome": "Read benchmarks critically and put error bars on your eval results.",
+     "options": {
+      "beginner": {
+       "title": "Understanding the 4 Main Approaches to LLM Evaluation",
+       "url": "https://magazine.sebastianraschka.com/p/llm-evaluation-4-approaches",
+       "note": null,
+       "videoId": null,
+       "type": "Substack",
+       "mins": 30,
+       "creator": "Sebastian Raschka"
+      },
+      "intermediate": {
+       "title": "A statistical approach to model evaluations",
+       "url": "https://www.anthropic.com/research/statistical-approach-to-model-evals",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 20,
+       "creator": "Anthropic"
+      },
+      "advanced": {
+       "title": "Section 4: AI Evals (Q11-Q20: benchmarks, statistics, regression testing)",
+       "url": null,
+       "note": "section in your PDF",
+       "videoId": null,
+       "type": "Interview Q&A",
+       "mins": 35,
+       "creator": "Your 'AI in Production' Interview Prep PDF"
+      }
+     }
+    },
+    {
+     "day": 75,
+     "topic": "Evaluating agents",
+     "outcome": "Trajectories, tool-use accuracy, task success and cost per task.",
+     "options": {
+      "beginner": {
+       "title": "Evaluating AI Agents (short course)",
+       "url": "https://www.deeplearning.ai/short-courses/evaluating-ai-agents/",
+       "note": null,
+       "videoId": null,
+       "type": "Course",
+       "mins": 60,
+       "creator": "DeepLearning.AI & Arize"
+      },
+      "intermediate": {
+       "title": "tau-bench: tool-agent-user interaction benchmark",
+       "url": "https://arxiv.org/abs/2406.12045",
+       "note": null,
+       "videoId": null,
+       "type": "Paper",
+       "mins": 35,
+       "creator": "Yao et al., Sierra"
+      },
+      "advanced": {
+       "title": "Section 11: Quality, evaluation, and red teaming",
+       "url": null,
+       "note": "section in your PDF",
+       "videoId": null,
+       "type": "Checklist",
+       "mins": 35,
+       "creator": "Your 'Production-Ready AI Agent Checklist' PDF"
+      }
+     }
+    },
+    {
+     "day": 76,
+     "topic": "Observability & tracing",
+     "outcome": "Traces, spans and the OpenTelemetry GenAI conventions for LLM apps.",
+     "options": {
+      "beginner": {
+       "title": "Section 1: GenAI and Agent Observability (Q1-Q10)",
+       "url": null,
+       "note": "section in your PDF",
+       "videoId": null,
+       "type": "Interview Q&A",
+       "mins": 30,
+       "creator": "Your 'AI in Production' Interview Prep PDF"
+      },
+      "intermediate": {
+       "title": "Semantic conventions for generative AI systems",
+       "url": "https://opentelemetry.io/docs/specs/semconv/gen-ai/",
+       "note": null,
+       "videoId": null,
+       "type": "Spec",
+       "mins": 25,
+       "creator": "OpenTelemetry"
+      },
+      "advanced": {
+       "title": "AI Agent Observability: Evolving Standards and Best Practices",
+       "url": "https://opentelemetry.io/blog/2025/ai-agent-observability/",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 20,
+       "creator": "OpenTelemetry"
+      }
+     }
+    },
+    {
+     "day": 77,
+     "topic": "Observability tools, hands-on",
+     "outcome": "Instrument an app and inspect real traces.",
+     "options": {
+      "beginner": {
+       "title": "Langfuse: Get started with tracing",
+       "url": "https://langfuse.com/docs",
+       "note": null,
+       "videoId": null,
+       "type": "Docs / Hands-on",
+       "mins": 30,
+       "creator": "Langfuse"
+      },
+      "intermediate": {
+       "title": "Arize Phoenix docs",
+       "url": "https://arize.com/docs/phoenix",
+       "note": null,
+       "videoId": null,
+       "type": "Docs / Hands-on",
+       "mins": 30,
+       "creator": "Arize"
+      },
+      "advanced": {
+       "title": "Section 2: Traceability (all questions)",
+       "url": null,
+       "note": "section in your PDF",
+       "videoId": null,
+       "type": "Interview Q&A",
+       "mins": 45,
+       "creator": "Your 'AI in Production' Interview Prep PDF"
+      }
+     }
+    },
+    {
+     "day": 78,
+     "topic": "Monitoring in production",
+     "outcome": "Know what to alert on: quality drift, cost, latency and failures.",
+     "options": {
+      "beginner": {
+       "title": "Section 3: Monitoring (Q1-Q10)",
+       "url": null,
+       "note": "section in your PDF",
+       "videoId": null,
+       "type": "Interview Q&A",
+       "mins": 30,
+       "creator": "Your 'AI in Production' Interview Prep PDF"
+      },
+      "intermediate": {
+       "title": "What is data drift in ML, and how to detect it",
+       "url": "https://www.evidentlyai.com/ml-in-production/data-drift",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 20,
+       "creator": "Evidently AI"
+      },
+      "advanced": {
+       "title": "Section 4: Log and monitor conversations in real time",
+       "url": null,
+       "note": "section in your PDF",
+       "videoId": null,
+       "type": "Checklist",
+       "mins": 30,
+       "creator": "Your 'Production-Ready AI Agent Checklist' PDF"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "no": 8,
+   "name": "Safety, Security & Guardrails",
+   "days": [
+    {
+     "day": 79,
+     "topic": "AI safety foundations",
+     "outcome": "Why safety matters for builders, and how labs approach it.",
+     "options": {
+      "beginner": {
+       "title": "Core Views on AI Safety",
+       "url": "https://www.anthropic.com/news/core-views-on-ai-safety",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 25,
+       "creator": "From your 7-Day Reading Plan (Anthropic)"
+      },
+      "intermediate": {
+       "title": "Constitutional AI: Harmlessness from AI Feedback",
+       "url": "https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback",
+       "note": null,
+       "videoId": null,
+       "type": "Research",
+       "mins": 25,
+       "creator": "Anthropic"
+      },
+      "advanced": {
+       "title": "Reward Hacking in Reinforcement Learning",
+       "url": "https://lilianweng.github.io/posts/2024-11-28-reward-hacking/",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 60,
+       "creator": "Lilian Weng"
+      }
+     }
+    },
+    {
+     "day": 80,
+     "topic": "Prompt injection",
+     "outcome": "The #1 security risk for LLM apps and agents, and design patterns that contain it.",
+     "options": {
+      "beginner": {
+       "title": "Gandalf: try to trick an LLM into leaking a password",
+       "url": "https://gandalf.lakera.ai/",
+       "note": null,
+       "videoId": null,
+       "type": "Interactive",
+       "mins": 20,
+       "creator": "Lakera"
+      },
+      "intermediate": {
+       "title": "The lethal trifecta for AI agents",
+       "url": "https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 15,
+       "creator": "Simon Willison"
+      },
+      "advanced": {
+       "title": "Design Patterns for Securing LLM Agents against Prompt Injections",
+       "url": "https://arxiv.org/abs/2506.08837",
+       "note": null,
+       "videoId": null,
+       "type": "Paper",
+       "mins": 45,
+       "creator": "Beurer-Kellner et al."
+      }
+     }
+    },
+    {
+     "day": 81,
+     "topic": "Threat modelling LLM apps",
+     "outcome": "Map the attack surface of an AI app: OWASP risks and abuse cases.",
+     "options": {
+      "beginner": {
+       "title": "OWASP Top 10 for LLM Applications",
+       "url": "https://genai.owasp.org/llm-top-10/",
+       "note": null,
+       "videoId": null,
+       "type": "Guide",
+       "mins": 25,
+       "creator": "OWASP"
+      },
+      "intermediate": {
+       "title": "Adversarial Attacks on LLMs",
+       "url": "https://lilianweng.github.io/posts/2023-10-25-adv-attack-llm/",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 50,
+       "creator": "Lilian Weng"
+      },
+      "advanced": {
+       "title": "Sections 5 & 8: Threat model + Security, identity, access control",
+       "url": null,
+       "note": "section in your PDF",
+       "videoId": null,
+       "type": "Checklist",
+       "mins": 40,
+       "creator": "Your 'Production-Ready AI Agent Checklist' PDF"
+      }
+     }
+    },
+    {
+     "day": 82,
+     "topic": "Guardrails",
+     "outcome": "Filter inputs and outputs with a dedicated guardrails layer.",
+     "options": {
+      "beginner": {
+       "title": "Guardrails for LLMs (video)",
+       "url": "https://www.youtube.com/watch?v=rQE3w8Qjx98",
+       "note": null,
+       "videoId": "rQE3w8Qjx98",
+       "type": "Video",
+       "mins": 15,
+       "creator": "From your YT Videos list"
+      },
+      "intermediate": {
+       "title": "Section 2: Guardrails framework: filter inputs AND outputs",
+       "url": null,
+       "note": "section in your PDF",
+       "videoId": null,
+       "type": "Checklist",
+       "mins": 30,
+       "creator": "Your 'Production-Ready AI Agent Checklist' PDF"
+      },
+      "advanced": {
+       "title": "Constitutional Classifiers: defending against universal jailbreaks",
+       "url": "https://www.anthropic.com/research/constitutional-classifiers",
+       "note": null,
+       "videoId": null,
+       "type": "Research",
+       "mins": 25,
+       "creator": "Anthropic"
+      }
+     }
+    },
+    {
+     "day": 83,
+     "topic": "Scope, fallbacks & human escalation",
+     "outcome": "Keep assistants on-topic and hand off to humans gracefully.",
+     "options": {
+      "beginner": {
+       "title": "Sections 1 & 3: Topic scope + Fallback responses",
+       "url": null,
+       "note": "section in your PDF",
+       "videoId": null,
+       "type": "Checklist",
+       "mins": 30,
+       "creator": "Your 'Production-Ready AI Agent Checklist' PDF"
+      },
+      "intermediate": {
+       "title": "How to implement LLM guardrails (cookbook)",
+       "url": "https://cookbook.openai.com/examples/how_to_use_guardrails",
+       "note": null,
+       "videoId": null,
+       "type": "Notebook / Hands-on",
+       "mins": 30,
+       "creator": "OpenAI Cookbook"
+      },
+      "advanced": {
+       "title": "Section 13: Human escalation and operations",
+       "url": null,
+       "note": "section in your PDF",
+       "videoId": null,
+       "type": "Checklist",
+       "mins": 30,
+       "creator": "Your 'Production-Ready AI Agent Checklist' PDF"
+      }
+     }
+    },
+    {
+     "day": 84,
+     "topic": "Privacy, compliance & responsible AI",
+     "outcome": "The rules and frameworks you'll be asked about in regulated settings.",
+     "options": {
+      "beginner": {
+       "title": "AI Risk Management Framework",
+       "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+       "note": null,
+       "videoId": null,
+       "type": "Framework",
+       "mins": 20,
+       "creator": "NIST"
+      },
+      "intermediate": {
+       "title": "EU AI Act: High-level summary",
+       "url": "https://artificialintelligenceact.eu/high-level-summary/",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 20,
+       "creator": "Future of Life Institute"
+      },
+      "advanced": {
+       "title": "Sections 9 & 10: Privacy, retention, compliance + Legal & regulated claims",
+       "url": null,
+       "note": "section in your PDF",
+       "videoId": null,
+       "type": "Checklist",
+       "mins": 35,
+       "creator": "Your 'Production-Ready AI Agent Checklist' PDF"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "no": 9,
+   "name": "Fine-tuning & Model Adaptation",
+   "days": [
+    {
+     "day": 85,
+     "topic": "When (and how) to fine-tune",
+     "outcome": "Understand full fine-tuning vs LoRA and when each is worth it.",
+     "options": {
+      "beginner": {
+       "title": "How to fine-tune open LLMs in 2025 with Hugging Face",
+       "url": "https://www.philschmid.de/fine-tune-llms-in-2025",
+       "note": null,
+       "videoId": null,
+       "type": "Article / Code",
+       "mins": 30,
+       "creator": "Phil Schmid"
+      },
+      "intermediate": {
+       "title": "Practical Tips for Finetuning LLMs Using LoRA",
+       "url": "https://magazine.sebastianraschka.com/p/practical-tips-for-finetuning-llms",
+       "note": null,
+       "videoId": null,
+       "type": "Substack",
+       "mins": 30,
+       "creator": "Sebastian Raschka"
+      },
+      "advanced": {
+       "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+       "url": "https://arxiv.org/abs/2106.09685",
+       "note": null,
+       "videoId": null,
+       "type": "Paper",
+       "mins": 40,
+       "creator": "Hu et al., Microsoft"
+      }
+     }
+    },
+    {
+     "day": 86,
+     "topic": "Fine-tuning, hands-on",
+     "outcome": "Fine-tune a small open model on your own data in a free notebook.",
+     "options": {
+      "beginner": {
+       "title": "Fine-tuning LLMs Guide",
+       "url": "https://unsloth.ai/docs/get-started/fine-tuning-llms-guide",
+       "note": null,
+       "videoId": null,
+       "type": "Guide / Hands-on",
+       "mins": 45,
+       "creator": "Unsloth"
+      },
+      "intermediate": {
+       "title": "SFT Trainer docs",
+       "url": "https://huggingface.co/docs/trl/sft_trainer",
+       "note": null,
+       "videoId": null,
+       "type": "Docs / Hands-on",
+       "mins": 30,
+       "creator": "Hugging Face TRL"
+      },
+      "advanced": {
+       "title": "QLoRA: Efficient Finetuning of Quantized LLMs",
+       "url": "https://arxiv.org/abs/2305.14314",
+       "note": null,
+       "videoId": null,
+       "type": "Paper",
+       "mins": 40,
+       "creator": "Dettmers et al."
+      }
+     }
+    },
+    {
+     "day": 87,
+     "topic": "Preference tuning & RL",
+     "outcome": "DPO, RLHF and GRPO: aligning a model to preferences and rewards.",
+     "options": {
+      "beginner": {
+       "title": "Preference Tuning LLMs with Direct Preference Optimization Methods",
+       "url": "https://huggingface.co/blog/pref-tuning",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 25,
+       "creator": "Hugging Face"
+      },
+      "intermediate": {
+       "title": "RLHF Book (read intro + DPO chapter)",
+       "url": "https://rlhfbook.com/",
+       "note": null,
+       "videoId": null,
+       "type": "Book (free)",
+       "mins": 60,
+       "creator": "Nathan Lambert"
+      },
+      "advanced": {
+       "title": "Direct Preference Optimization (DPO)",
+       "url": "https://arxiv.org/abs/2305.18290",
+       "note": null,
+       "videoId": null,
+       "type": "Paper",
+       "mins": 45,
+       "creator": "Rafailov et al., Stanford"
+      }
+     }
+    },
+    {
+     "day": 88,
+     "topic": "Distillation, synthetic data & small models",
+     "outcome": "How today's small models are trained, and how to make your own.",
+     "options": {
+      "beginner": {
+       "title": "New LLM Pre-training and Post-training Paradigms",
+       "url": "https://magazine.sebastianraschka.com/p/new-llm-pre-training-and-post-training",
+       "note": null,
+       "videoId": null,
+       "type": "Substack",
+       "mins": 30,
+       "creator": "Sebastian Raschka"
+      },
+      "intermediate": {
+       "title": "The Smol Training Playbook (skim the post-training chapter)",
+       "url": "https://huggingface.co/spaces/HuggingFaceTB/smol-training-playbook",
+       "note": null,
+       "videoId": null,
+       "type": "Guide",
+       "mins": 60,
+       "creator": "Hugging Face"
+      },
+      "advanced": {
+       "title": "Distilling the Knowledge in a Neural Network",
+       "url": "https://arxiv.org/abs/1503.02531",
+       "note": null,
+       "videoId": null,
+       "type": "Paper",
+       "mins": 30,
+       "creator": "Hinton, Vinyals & Dean"
+      }
+     }
+    },
+    {
+     "day": 89,
+     "topic": "Quantization",
+     "outcome": "FP16, INT8, INT4, GGUF, AWQ: shrinking models so they run cheaply.",
+     "options": {
+      "beginner": {
+       "title": "A Visual Guide to Quantization",
+       "url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-quantization",
+       "note": null,
+       "videoId": null,
+       "type": "Substack",
+       "mins": 40,
+       "creator": "Maarten Grootendorst"
+      },
+      "intermediate": {
+       "title": "A Gentle Introduction to 8-bit Matrix Multiplication (bitsandbytes)",
+       "url": "https://huggingface.co/blog/hf-bitsandbytes-integration",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 30,
+       "creator": "Hugging Face"
+      },
+      "advanced": {
+       "title": "AWQ: Activation-aware Weight Quantization",
+       "url": "https://arxiv.org/abs/2306.00978",
+       "note": null,
+       "videoId": null,
+       "type": "Paper",
+       "mins": 40,
+       "creator": "Lin et al., MIT"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "no": 10,
+   "name": "Inference, Serving & LLMOps",
+   "days": [
+    {
+     "day": 90,
+     "topic": "LLM inference fundamentals",
+     "outcome": "Prefill vs decode, TTFT, TPOT, throughput: the metrics of serving.",
+     "options": {
+      "beginner": {
+       "title": "LLM Inference Handbook (Foundations section)",
+       "url": "https://bentoml.com/llm/",
+       "note": null,
+       "videoId": null,
+       "type": "Guide",
+       "mins": 30,
+       "creator": "BentoML"
+      },
+      "intermediate": {
+       "title": "LLM Inference Performance Engineering: Best Practices",
+       "url": "https://www.databricks.com/blog/llm-inference-performance-engineering-best-practices",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 30,
+       "creator": "Databricks"
+      },
+      "advanced": {
+       "title": "Transformer Inference Arithmetic",
+       "url": "https://kipp.ly/transformer-inference-arithmetic/",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 45,
+       "creator": "kipply"
+      }
+     }
+    },
+    {
+     "day": 91,
+     "topic": "KV cache & batching",
+     "outcome": "The two ideas that make LLM serving efficient.",
+     "options": {
+      "beginner": {
+       "title": "Understanding and Coding the KV Cache in LLMs from Scratch",
+       "url": "https://magazine.sebastianraschka.com/p/coding-the-kv-cache-in-llms",
+       "note": null,
+       "videoId": null,
+       "type": "Substack",
+       "mins": 30,
+       "creator": "Sebastian Raschka"
+      },
+      "intermediate": {
+       "title": "How continuous batching enables 23x throughput in LLM inference",
+       "url": "https://www.anyscale.com/blog/continuous-batching-llm-inference",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 25,
+       "creator": "Anyscale"
+      },
+      "advanced": {
+       "title": "vLLM: Easy, Fast, and Cheap LLM Serving with PagedAttention",
+       "url": "https://blog.vllm.ai/2023/06/20/vllm.html",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 25,
+       "creator": "vLLM team"
+      }
+     }
+    },
+    {
+     "day": 92,
+     "topic": "GPUs for AI Engineers",
+     "outcome": "Memory bandwidth, compute and why most inference is memory-bound.",
+     "options": {
+      "beginner": {
+       "title": "GPU Glossary",
+       "url": "https://modal.com/gpu-glossary",
+       "note": null,
+       "videoId": null,
+       "type": "Guide",
+       "mins": 25,
+       "creator": "Modal"
+      },
+      "intermediate": {
+       "title": "An Even Easier Introduction to CUDA",
+       "url": "https://developer.nvidia.com/blog/even-easier-introduction-cuda/",
+       "note": null,
+       "videoId": null,
+       "type": "Article / Code",
+       "mins": 30,
+       "creator": "NVIDIA"
+      },
+      "advanced": {
+       "title": "Making Deep Learning Go Brrrr From First Principles",
+       "url": "https://horace.io/brrr_intro.html",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 30,
+       "creator": "Horace He"
+      }
+     }
+    },
+    {
+     "day": 93,
+     "topic": "Inference engines",
+     "outcome": "vLLM, SGLang, llama.cpp, Ollama: pick and run the right one.",
+     "options": {
+      "beginner": {
+       "title": "Ollama: run models locally",
+       "url": "https://github.com/ollama/ollama",
+       "note": null,
+       "videoId": null,
+       "type": "Hands-on",
+       "mins": 20,
+       "creator": "Ollama"
+      },
+      "intermediate": {
+       "title": "vLLM Quickstart",
+       "url": "https://docs.vllm.ai/en/latest/getting_started/quickstart.html",
+       "note": null,
+       "videoId": null,
+       "type": "Docs / Hands-on",
+       "mins": 30,
+       "creator": "vLLM"
+      },
+      "advanced": {
+       "title": "Section 5: Deployment, LLM serving & inference infrastructure sub-section",
+       "url": null,
+       "note": "section in your PDF",
+       "videoId": null,
+       "type": "Interview Q&A",
+       "mins": 40,
+       "creator": "Your 'AI in Production' Interview Prep PDF"
+      }
+     }
+    },
+    {
+     "day": 94,
+     "topic": "Latency optimisation",
+     "outcome": "Speculative decoding, FlashAttention and other tricks to go faster.",
+     "options": {
+      "beginner": {
+       "title": "LLM latency optimisation (video)",
+       "url": "https://www.youtube.com/watch?v=hMs8VNRy5Ys",
+       "note": null,
+       "videoId": "hMs8VNRy5Ys",
+       "type": "Video",
+       "mins": 20,
+       "creator": "From your YT Videos list"
+      },
+      "intermediate": {
+       "title": "Mastering LLM Techniques: Inference Optimization",
+       "url": "https://developer.nvidia.com/blog/mastering-llm-techniques-inference-optimization/",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 30,
+       "creator": "NVIDIA"
+      },
+      "advanced": {
+       "title": "Fast Inference from Transformers via Speculative Decoding",
+       "url": "https://arxiv.org/abs/2211.17192",
+       "note": null,
+       "videoId": null,
+       "type": "Paper",
+       "mins": 40,
+       "creator": "Leviathan et al., Google"
+      }
+     }
+    },
+    {
+     "day": 95,
+     "topic": "Distributed training & inference",
+     "outcome": "Tensor, pipeline, data and expert parallelism.",
+     "options": {
+      "beginner": {
+       "title": "The Ultra-Scale Playbook (read the overview + TP/PP sections)",
+       "url": "https://huggingface.co/spaces/nanotron/ultrascale-playbook",
+       "note": null,
+       "videoId": null,
+       "type": "Guide",
+       "mins": 45,
+       "creator": "Hugging Face"
+      },
+      "intermediate": {
+       "title": "How to Scale Your Model (ch. 1-3)",
+       "url": "https://jax-ml.github.io/scaling-book/",
+       "note": null,
+       "videoId": null,
+       "type": "Book (free)",
+       "mins": 60,
+       "creator": "Google DeepMind"
+      },
+      "advanced": {
+       "title": "Practice: LLM Infrastructure & Inference questions (Section 7)",
+       "url": null,
+       "note": "section in your PDF",
+       "videoId": null,
+       "type": "Practice Qs",
+       "mins": 30,
+       "creator": "Your 'System Design Questions' PDF"
+      }
+     }
+    },
+    {
+     "day": 96,
+     "topic": "Deploying AI services",
+     "outcome": "Containerise your API and run it reliably at scale.",
+     "options": {
+      "beginner": {
+       "title": "FastAPI in Containers: Docker",
+       "url": "https://fastapi.tiangolo.com/deployment/docker/",
+       "note": null,
+       "videoId": null,
+       "type": "Docs / Hands-on",
+       "mins": 25,
+       "creator": "FastAPI"
+      },
+      "intermediate": {
+       "title": "Learn Kubernetes Basics",
+       "url": "https://kubernetes.io/docs/tutorials/kubernetes-basics/",
+       "note": null,
+       "videoId": null,
+       "type": "Tutorial / Hands-on",
+       "mins": 45,
+       "creator": "Kubernetes"
+      },
+      "advanced": {
+       "title": "Section 14: Deployment, versioning, and incident response",
+       "url": null,
+       "note": "section in your PDF",
+       "videoId": null,
+       "type": "Checklist",
+       "mins": 30,
+       "creator": "Your 'Production-Ready AI Agent Checklist' PDF"
+      }
+     }
+    },
+    {
+     "day": 97,
+     "topic": "MLOps / LLMOps",
+     "outcome": "CI/CD for models and prompts, drift, retraining and rollbacks.",
+     "options": {
+      "beginner": {
+       "title": "Section 5: Deployment, gateways, reliability & CI/CD sub-section",
+       "url": null,
+       "note": "section in your PDF",
+       "videoId": null,
+       "type": "Interview Q&A",
+       "mins": 35,
+       "creator": "Your 'AI in Production' Interview Prep PDF"
+      },
+      "intermediate": {
+       "title": "MLOps: Continuous delivery and automation pipelines in ML",
+       "url": "https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 35,
+       "creator": "Google Cloud"
+      },
+      "advanced": {
+       "title": "Practice: MLOps & Deployment questions (Section 3)",
+       "url": null,
+       "note": "section in your PDF",
+       "videoId": null,
+       "type": "Practice Qs",
+       "mins": 30,
+       "creator": "Your 'System Design Questions' PDF"
+      }
+     }
+    },
+    {
+     "day": 98,
+     "topic": "Routing, gateways & cost",
+     "outcome": "Route requests across models, add gateways, and keep spend under control.",
+     "options": {
+      "beginner": {
+       "title": "LiteLLM: one gateway for 100+ LLM APIs",
+       "url": "https://docs.litellm.ai/",
+       "note": null,
+       "videoId": null,
+       "type": "Docs / Hands-on",
+       "mins": 25,
+       "creator": "LiteLLM"
+      },
+      "intermediate": {
+       "title": "Section 12: Reliability, latency, and cost guardrails",
+       "url": null,
+       "note": "section in your PDF",
+       "videoId": null,
+       "type": "Checklist",
+       "mins": 30,
+       "creator": "Your 'Production-Ready AI Agent Checklist' PDF"
+      },
+      "advanced": {
+       "title": "Building A Generative AI Platform",
+       "url": "https://huyenchip.com/2024/07/25/genai-platform.html",
+       "note": null,
+       "videoId": null,
+       "type": "Article",
+       "mins": 50,
+       "creator": "Chip Huyen"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "no": 11,
+   "name": "System Design & Capstone",
+   "days": [
+    {
+     "day": 99,
+     "topic": "AI system design",
+     "outcome": "Put it all together: design scalable AI and ML systems end to end.",
+     "options": {
+      "beginner": {
+       "title": "System Design Full Course (core concepts)",
+       "url": "https://youtu.be/sqifqSQAqhU",
+       "note": null,
+       "videoId": "sqifqSQAqhU",
+       "type": "Video",
+       "mins": 60,
+       "creator": "From your System Design Prep doc"
+      },
+      "intermediate": {
+       "title": "ML System Design playlist (pick 1 case study)",
+       "url": "https://youtube.com/playlist?list=PLrtCHHeadkHqYX7O5cjHeWHzH2jzQqWg5",
+       "note": null,
+       "videoId": null,
+       "type": "Video playlist",
+       "mins": 45,
+       "creator": "From your System Design Prep doc"
+      },
+      "advanced": {
+       "title": "ML Systems Design Series (pick 1 walkthrough)",
+       "url": "https://www.youtube.com/watch?v=OEiNnfdxBRE&list=PLSrTvUm384I9PV10koj_cqit9OfbJXEkq",
+       "note": null,
+       "videoId": "OEiNnfdxBRE",
+       "type": "Video playlist",
+       "mins": 45,
+       "creator": "From your System Design Prep doc"
+      }
+     }
+    },
+    {
+     "day": 100,
+     "topic": "Capstone: ship it",
+     "outcome": "Ship a small production-grade AI app and review it against a real launch bar.",
+     "options": {
+      "beginner": {
+       "title": "Section 15: Pre-launch master checklist (run it on your project)",
+       "url": null,
+       "note": "section in your PDF",
+       "videoId": null,
+       "type": "Checklist",
+       "mins": 45,
+       "creator": "Your 'Production-Ready AI Agent Checklist' PDF"
+      },
+      "intermediate": {
+       "title": "Mock interview: answer 1 question from each section",
+       "url": null,
+       "note": "section in your PDF",
+       "videoId": null,
+       "type": "Practice Qs",
+       "mins": 60,
+       "creator": "Your 'System Design Questions' PDF"
+      },
+      "advanced": {
+       "title": "Section 6: GenAI Math, Case Studies & System Design",
+       "url": null,
+       "note": "section in your PDF",
+       "videoId": null,
+       "type": "Interview Q&A",
+       "mins": 60,
+       "creator": "Your 'AI in Production' Interview Prep PDF"
+      }
+     }
+    }
+   ]
+  }
+ ]
+}
