@@ -10,6 +10,10 @@ npm run scrape
 npm run dev
 ```
 
+
+
+
+
 - API: http://localhost:4000
 - App: http://localhost:5173
 
