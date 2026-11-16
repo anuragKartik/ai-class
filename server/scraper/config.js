@@ -104,4 +104,87 @@ export const TRACKS = {
     hnMinPoints: 3,
     hnMatch: /forward[\s-]?deployed|\bfde\b|palantir/i,
   },
+
+  salesforce: {
+    id: 'salesforce',
+    label: 'Salesforce Interview',
+    tagline: 'MTS Production Support & AI Automation — coding, reliability, agents, and Salesforce interview rounds.',
+    recencyWeight: 1.0,
+    minVideoSeconds: 5 * 60,
+    topics: [
+      {
+        id: 'process',
+        label: 'Interview Process',
+        match: /salesforce.*(interview|hiring|mts|hackerrank)|interview.*salesforce/i,
+        queries: [
+          'Salesforce software engineer interview process',
+          'Salesforce MTS interview experience',
+          'Salesforce HackerRank interview',
+        ],
+      },
+      {
+        id: 'dsa',
+        label: 'DSA & Coding',
+        match: /leetcode|coding interview|data structure|algorithm|hackerrank/i,
+        queries: [
+          'coding interview preparation LeetCode medium',
+          'HackerRank coding assessment tips',
+          'Salesforce coding interview questions',
+        ],
+      },
+      {
+        id: 'prod-support',
+        label: 'Production Support',
+        match: /on[\s-]?call|incident|sre|production|root cause|postmortem|observab/i,
+        queries: [
+          'how to handle production incidents on call',
+          'SRE incident response tutorial',
+          'root cause analysis debugging production',
+        ],
+      },
+      {
+        id: 'ai-automation',
+        label: 'AI Automation',
+        match: /agent|rag|llm|automation|support bot|langchain|langgraph/i,
+        queries: [
+          'build AI support agent tutorial',
+          'RAG chatbot for customer support',
+          'AI agents with guardrails production',
+        ],
+      },
+      {
+        id: 'system-design',
+        label: 'System & LLD',
+        match: /system design|low level design|\blld\b|parking lot|meeting scheduler/i,
+        queries: [
+          'system design interview ticket system',
+          'low level design meeting scheduler',
+          'system design multi tenant SaaS',
+        ],
+      },
+      {
+        id: 'salesforce-platform',
+        label: 'Salesforce Platform',
+        match: /salesforce|apex|trailhead|agentforce|crm/i,
+        queries: [
+          'Salesforce Trailhead Apex basics',
+          'Salesforce objects and data model explained',
+          'What is Salesforce Agentforce',
+        ],
+      },
+      {
+        id: 'behavioral',
+        label: 'Behavioral & Values',
+        match: /behavioral|STAR method|salesforce values|ohana|trust customer success/i,
+        queries: [
+          'STAR method behavioral interview examples',
+          'Salesforce values Trust Customer Success',
+          'behavioral interview software engineer on call',
+        ],
+      },
+    ],
+    hnQueries: ['Salesforce engineering', 'Salesforce interview', 'production incident response', 'AI support agent', 'Agentforce'],
+    hnMinPoints: 3,
+    hnMatch: /salesforce|agentforce|incident|on[\s-]?call|support agent|\brag\b/i,
+  },
 };

@@ -8,6 +8,7 @@ const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 const TRACK_META = [
   { id: 'ai', label: 'AI Engineer' },
   { id: 'fde', label: 'Forward Deployed Engineer' },
+  { id: 'salesforce', label: 'Salesforce Interview' },
 ];
 
 const TRACK_IDS = TRACK_META.map((t) => t.id);

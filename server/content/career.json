@@ -46,6 +46,39 @@
           { "id": "s1", "title": "Multi-tenant RAG", "prompt": "Design a RAG service used by 40 enterprise clients. Each client has private documents. Cover ingest, retrieval, tenancy, evals, and what happens when one client uploads malware." },
           { "id": "s2", "title": "Client data pipeline", "prompt": "Design a pipeline that pulls from Salesforce, a warehouse, and three CSVs every night, then serves a dashboard by 8am. Talk consistency, retries, and alerting." }
         ]
+      },
+      {
+        "id": "sf-prod",
+        "label": "SF production",
+        "minutes": 30,
+        "hint": "Use MITIGATE → DIAGNOSE → PREVENT. Say who you notify and when the next update comes.",
+        "questions": [
+          { "id": "sp1", "title": "Intermittent 500s", "prompt": "Customers report intermittent 500s on one API after a midday deploy. Walk through your first 30 minutes: blast radius, mitigation, evidence, communication." },
+          { "id": "sp2", "title": "Noisy nightly alert", "prompt": "An alert fires every night and the team always ignores it. What do you do this week, and how do you prevent alert fatigue permanently?" },
+          { "id": "sp3", "title": "Access outage", "prompt": "Permission changes blocked a partner integration. How do you restore service safely, preserve auditability, and stop repeats?" }
+        ]
+      },
+      {
+        "id": "sf-ai",
+        "label": "SF AI automation",
+        "minutes": 35,
+        "hint": "Human workflow first, then model. Side effects need policy + approval + audit log.",
+        "questions": [
+          { "id": "sa1", "title": "Tier-1 case agent", "prompt": "Design an AI agent that classifies Tier-1 cases and drafts replies using runbooks. When can it auto-send vs need a human? How do you evaluate safety before launch?" },
+          { "id": "sa2", "title": "Privileged actions", "prompt": "Product wants the agent to reset passwords and grant org access. How do you refuse or redesign this so Trust stays #1?" },
+          { "id": "sa3", "title": "Measure impact", "prompt": "Your Academy mentor asks how you will prove the automation worked in 90 days. Pick metrics and a measurement plan." }
+        ]
+      },
+      {
+        "id": "sf-values",
+        "label": "SF values",
+        "minutes": 25,
+        "hint": "STAR under two minutes. Map explicitly to Trust, Customer Success, Innovation, Equality, or Sustainability.",
+        "questions": [
+          { "id": "sv1", "title": "Trust under pressure", "prompt": "Tell me about a time you protected customer trust (security, honesty about an outage, or refusing an unsafe shortcut)." },
+          { "id": "sv2", "title": "Why Salesforce", "prompt": "Why Salesforce Engineering and why Production Support & AI Automation — not a generic product SWE role?" },
+          { "id": "sv3", "title": "Ambiguity", "prompt": "You join and requirements for an automation project are unclear. Walk through your first 72 hours." }
+        ]
       }
     ],
     "book": [
@@ -58,6 +91,7 @@
   "jobs": {
     "intro": "Apply in public, then ask for a referral. A warm intro beats a cold apply almost every time.",
     "boards": [
+      { "company": "Salesforce", "role": "Software Engineering MTS – Production Support & AI Automation (JR365887)", "url": "https://www.salesforce.com/company/careers/" },
       { "company": "Palantir", "role": "Forward Deployed Software Engineer", "url": "https://www.palantir.com/careers/" },
       { "company": "OpenAI", "role": "Forward Deployed / Applied", "url": "https://openai.com/careers/search/" },
       { "company": "Anthropic", "role": "Forward Deployed / Deployment", "url": "https://www.anthropic.com/careers" },
@@ -66,6 +100,7 @@
       { "company": "Scale AI", "role": "Deployment / Applied AI", "url": "https://scale.com/careers" }
     ],
     "searches": [
+      { "label": "LinkedIn jobs: Salesforce MTS", "url": "https://www.linkedin.com/jobs/search/?keywords=Salesforce%20MTS" },
       { "label": "LinkedIn jobs: Forward Deployed Engineer", "url": "https://www.linkedin.com/jobs/search/?keywords=forward%20deployed%20engineer" },
       { "label": "LinkedIn jobs: AI Engineer", "url": "https://www.linkedin.com/jobs/search/?keywords=AI%20engineer" },
       { "label": "LinkedIn jobs: Field / Deployment Engineer", "url": "https://www.linkedin.com/jobs/search/?keywords=deployment%20engineer%20AI" },
@@ -75,6 +110,8 @@
   "linkedin": {
     "intro": "Connect with people who already do the job. Ask for 15 minutes, not a referral in the first message.",
     "peopleSearches": [
+      { "label": "People: Salesforce MTS Hyderabad", "url": "https://www.linkedin.com/search/results/people/?keywords=Salesforce%20MTS%20Hyderabad" },
+      { "label": "People: Salesforce Software Engineer Production Support", "url": "https://www.linkedin.com/search/results/people/?keywords=Salesforce%20production%20support%20engineer" },
       { "label": "People: Forward Deployed Engineer", "url": "https://www.linkedin.com/search/results/people/?keywords=forward%20deployed%20engineer" },
       { "label": "People: Palantir FDSE / FDE", "url": "https://www.linkedin.com/search/results/people/?keywords=Palantir%20forward%20deployed" },
       { "label": "People: OpenAI forward deployed", "url": "https://www.linkedin.com/search/results/people/?keywords=OpenAI%20forward%20deployed" },

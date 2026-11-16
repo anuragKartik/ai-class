@@ -1,6 +1,6 @@
 # Anurag AI Classes
 
-Two-track classroom for **AI Engineer** (LangChain, LangGraph, RAG, agents) and **Forward Deployed Engineer** prep: YouTube lessons, curated reading, growth tracking, mock interviews, and job referrals.
+Three-track classroom for **AI Engineer** (LangChain, LangGraph, RAG, agents), **Forward Deployed Engineer** prep, and **Salesforce Interview** (MTS Production Support & AI Automation): YouTube lessons, curated reading, growth tracking, mock interviews, and job referrals.
 
 **Accounts:** login is local to this browser (no database). Progress, mocks, and job apps are saved on the device under the signed-in account and stay until you log out. Logging into another account on the same laptop loads that account’s data instead.
 
@@ -28,6 +28,14 @@ The app is a Vite frontend plus serverless `/api/*` routes (same handlers as the
    - Click Edit → clear the value (must be empty / repo root)
    - Do **not** use `client` — that causes `client/client/package.json` and hides `/api`
 3. In the same page, clear any custom Install/Build Command overrides so `vercel.json` is used
-4. Redeploy; then `/api/career` and `/api/tracks/ai` should return JSON
+4. Redeploy; then `/api/career` and `/api/tracks/ai` (also `/api/tracks/salesforce`) should return JSON
+
+## Course 03 — Salesforce Interview
+
+Prep for **Software Engineering MTS – Production Support & AI Automation (JR365887)**: role overview, 4-week / 8-week plans, official-style interview milestones, a large question bank (DSA, prod support, AI agents, values, communication), plus scraped classroom videos.
+
+```bash
+npm run scrape -- salesforce
+```
 
 

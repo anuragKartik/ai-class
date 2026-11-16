@@ -83,4 +83,104 @@ export const CURATED = {
       { label: 'Palantir jobs board', url: 'https://jobs.lever.co/palantir', where: 'Jobs' },
     ],
   },
+
+  salesforce: {
+    topics: {
+      process: [
+        {
+          url: 'https://trailhead.salesforce.com/content/learn/modules/strategies-for-successful-software-engineer-interviews-26/explore-your-interview-roadmap',
+          title: 'Salesforce Engineer Interview Roadmap (Trailhead)',
+          kind: 'course',
+          skipCheck: true,
+        },
+        {
+          url: 'https://trailhead.salesforce.com/content/learn/modules/strategies-for-successful-software-engineer-interviews-26/ace-the-technical-assessments',
+          title: 'Ace HackerRank and Technical Loops (Trailhead)',
+          kind: 'course',
+          skipCheck: true,
+        },
+        {
+          url: 'https://www.salesforce.com/company/careers/culture/how-we-hire/',
+          title: 'How We Hire at Salesforce',
+          kind: 'careers',
+          skipCheck: true,
+        },
+      ],
+      'ai-automation': [
+        {
+          url: 'https://www.anthropic.com/engineering/building-effective-agents',
+          title: 'Building Effective Agents - Anthropic',
+          kind: 'blog',
+        },
+        {
+          url: 'https://modelcontextprotocol.io/introduction',
+          title: 'Model Context Protocol - Introduction',
+          kind: 'docs',
+          skipCheck: true,
+        },
+      ],
+      'prod-support': [
+        {
+          url: 'https://sre.google/sre-book/table-of-contents/',
+          title: 'Google SRE Book (selected chapters)',
+          kind: 'docs',
+          skipCheck: true,
+        },
+      ],
+      'salesforce-platform': [
+        {
+          url: 'https://trailhead.salesforce.com/',
+          title: 'Trailhead - Salesforce learning platform',
+          kind: 'course',
+          skipCheck: true,
+        },
+        {
+          url: 'https://trailhead.salesforce.com/content/learn/modules/salesforce-culture-and-values/explore-salesforce-culture-and-values',
+          title: 'Salesforce Culture and Values',
+          kind: 'course',
+          skipCheck: true,
+        },
+      ],
+      behavioral: [
+        {
+          url: 'https://www.salesforce.com/company/careers/culture/',
+          title: 'Life at Salesforce - Culture & Values',
+          kind: 'careers',
+          skipCheck: true,
+        },
+      ],
+    },
+    links: [
+      {
+        label: 'Your role family - Salesforce Careers',
+        url: 'https://www.salesforce.com/company/careers/',
+        where: 'Jobs',
+      },
+      {
+        label: 'LeetCode Discuss - Salesforce MTS',
+        url: 'https://leetcode.com/discuss/interview-question?currentPage=1&orderBy=most_relevant&query=Salesforce%20MTS',
+        where: 'Forum',
+      },
+      {
+        label: 'Glassdoor - Salesforce MTS interviews',
+        url: 'https://www.glassdoor.co.in/Interview/Salesforce-Member-of-Technical-Staff-MTS-Interview-Questions-EI_IE11159.0,10_KO11,40.htm',
+        where: 'Glassdoor',
+      },
+      {
+        label: 'LinkedIn - Salesforce MTS Hyderabad',
+        url: 'https://www.linkedin.com/jobs/search/?keywords=Salesforce%20MTS%20Hyderabad',
+        where: 'Jobs',
+      },
+      {
+        label: 'YouTube - Salesforce interview prep',
+        url: 'https://www.youtube.com/results?search_query=salesforce+software+engineer+interview',
+        where: 'YouTube',
+      },
+      {
+        label: 'NeetCode roadmap',
+        url: 'https://neetcode.io/roadmap',
+        where: 'DSA',
+      },
+    ],
+  },
 };

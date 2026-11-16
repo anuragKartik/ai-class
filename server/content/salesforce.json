@@ -1,0 +1,576 @@
+{
+  "program": {
+    "title": "Salesforce Interview Guide",
+    "blurb": "Targeted prep for Software Engineering MTS – Production Support & AI Automation (JR365887): coding, production debugging, AI agents, communication, and Salesforce values.",
+    "credit": "Built around the official Salesforce Engineering interview roadmap (Trailhead), recent MTS interview reports (LeetCode / Glassdoor / DEV), and the JR365887 job description for the AI-native Academy Production Support & AI Automation role."
+  },
+  "role": {
+    "title": "Software Engineering MTS – Production Support & AI Automation",
+    "reqId": "JR365887",
+    "location": "Hyderabad, India (AI-native Academy)",
+    "statusHint": "Your application is In Consideration via employee referral — stay interview-ready; loops can move in a week or stretch across months.",
+    "summary": "Early-career Member of Technical Staff role. You investigate production cases, join support rotations, and build software plus AI agents that remove recurring manual work. Strong performers can graduate into core product / platform engineering.",
+    "dayToDay": [
+      "Investigate support cases, production defects, access issues and integration failures",
+      "Build automation for access requests, case responses, log analysis and maintenance",
+      "Develop AI agents that classify cases, retrieve knowledge and run approved actions with guardrails",
+      "Find root causes and harden code, monitoring, tests and docs so the same incident does not return",
+      "Write, test, review and deploy maintainable software",
+      "Join incident response and on-call with mentoring",
+      "Measure impact: less manual effort, fewer repeats, faster resolution, better reliability"
+    ],
+    "mustHave": [
+      "3+ years programming in Python, Java, JavaScript, TypeScript or Go",
+      "Software fundamentals: data structures, APIs, testing, version control, debugging",
+      "Investigate problems from logs, error messages and system behaviour",
+      "Curiosity about automation, AI-assisted development and reliable production systems",
+      "Clear communication, collaboration, willingness to ask questions and learn",
+      "CS / engineering degree or equivalent practical experience"
+    ],
+    "niceToHave": [
+      "Scripts, internal tools or workflow automation",
+      "Salesforce platform knowledge (Admin / Apex) or desire to certify",
+      "Cloud, databases, CI/CD or monitoring tools",
+      "AI agents, LLMs or knowledge-retrieval systems",
+      "Enterprise app support or production incident investigation",
+      "Secure coding, access controls and audit logging"
+    ],
+    "whyThisRole": [
+      { "title": "Build + support", "text": "You ship code and also sit with real production pain — the fastest way to learn how large systems actually fail." },
+      { "title": "AI with guardrails", "text": "Not demo chatbots. Agents that classify, retrieve and act safely inside support workflows." },
+      { "title": "Path into product", "text": "Academy framing: prove impact here, then move into broader product / platform engineering." },
+      { "title": "Salesforce scale", "text": "Multi-tenant CRM at global scale. Trust, reliability and customer impact are the product." }
+    ]
+  },
+  "overview": {
+    "what": "Salesforce MTS (Member of Technical Staff) is a software engineer role. This specific posting sits in an AI-native Academy: you combine production support with building automation and AI agents. Interviews still follow the standard Salesforce Engineering milestones (recruiter → hiring manager → HackerRank → virtual technical loop → final on-site), plus a role specialty deep dive on debugging, on-call judgement and safe AI automation.",
+    "daily": [
+      "Trace a failing case from customer report → logs → root cause → fix or workaround",
+      "Turn a repeated manual support step into a script, tool or agent workflow",
+      "Ship small reliability improvements (alerts, tests, docs) and measure impact",
+      "Pair with mentors and product teams to change systems safely",
+      "Communicate status clearly during incidents — customers and internal stakeholders"
+    ],
+    "compare": {
+      "columns": ["", "This MTS role", "Core product SWE", "Classic L1/L2 support"],
+      "rows": [
+        ["Primary output", "Fixes + automation + AI tools", "Product features", "Ticket resolution"],
+        ["Coding depth", "Medium-high, production-shaped", "High, feature systems", "Low-medium scripts"],
+        ["On-call / incidents", "Expected, with mentoring", "Team-dependent", "Core of the job"],
+        ["AI work", "Agents, RAG, case automation", "Varies by team", "Rare"],
+        ["Growth path", "Into product / platform eng", "Senior / staff product", "Support lead / ops"]
+      ]
+    },
+    "why": [
+      { "title": "Interview signal match", "text": "Your AI + backend track already maps to what this JD asks: agents, retrieval, APIs, debugging." },
+      { "title": "Referral advantage", "text": "You applied via employee referral. Keep momentum: recruiter calls can appear suddenly." },
+      { "title": "Academy runway", "text": "Mentored production work is designed for early career — they expect learning speed, not omniscience." },
+      { "title": "Career leverage", "text": "Clear Salesforce MTS on the resume opens later product, platform and AI engineering paths." }
+    ],
+    "companies": [
+      "Salesforce Engineering (core product, platform, infrastructure)",
+      "Slack Engineering (Salesforce family — note: proctoring rules can differ)",
+      "Sister stacks: Service Cloud, Agentforce, Data Cloud / Tableau",
+      "Comparable India hiring: Amazon, Microsoft, Google, Oracle, ServiceNow (support + reliability flavours)"
+    ],
+    "salary": {
+      "title": "Indicative India MTS packages (market, not an offer)",
+      "rows": [
+        ["Early MTS / Academy-style", "Often mid-teens to mid-20s LPA total, highly company- and level-dependent"],
+        ["Experienced MTS (2–4 yrs)", "Often mid-20s to 40+ LPA at large product companies"],
+        ["SMTS / senior", "Significantly higher; equity and joining bonus matter"]
+      ],
+      "note": "Salesforce does not publish JR365887 compensation publicly. Treat these as market orientation only. Confirm with your recruiter; never invent a number in interview."
+    },
+    "skills": [
+      {
+        "title": "Coding & DSA (every MTS loop)",
+        "items": [
+          "Arrays, strings, hash maps, two pointers, sliding window, stacks/queues",
+          "Trees, graphs (BFS/DFS), heaps, basic DP",
+          "Explain time/space out loud; write tests and edge cases",
+          "Language fluency in one of: Java, Python, JS/TS, Go"
+        ]
+      },
+      {
+        "title": "Production support & reliability",
+        "items": [
+          "Log-driven debugging and stack-trace reading",
+          "Incident response: triage, mitigate, communicate, postmortem",
+          "Monitoring, alerting, runbooks, on-call hygiene",
+          "Root-cause analysis that ends in a lasting fix, not only a ticket close"
+        ]
+      },
+      {
+        "title": "AI automation (role specialty)",
+        "items": [
+          "LLM APIs, prompt patterns, structured outputs",
+          "RAG / knowledge retrieval over runbooks and case history",
+          "Agent workflows: classify → retrieve → propose action → human or policy gate",
+          "Guardrails: permissions, audit logs, no unsafe side effects",
+          "Familiarity with MCP, evals and observability (Salesforce now expects AI literacy)"
+        ]
+      },
+      {
+        "title": "Backend & platform",
+        "items": [
+          "REST APIs, auth (OAuth/JWT concepts), idempotency",
+          "SQL, transactions, indexing basics",
+          "CI/CD, Docker basics, cloud fundamentals",
+          "Salesforce objects, Apex triggers, permission sets (nice-to-have / learnable)"
+        ]
+      },
+      {
+        "title": "Communication & values",
+        "items": [
+          "STAR stories for Trust, Customer Success, Innovation, Equality, Sustainability",
+          "Calm status updates during outages",
+          "Explain trade-offs to non-experts",
+          "Ask clarifying questions early; admit unknowns honestly"
+        ]
+      }
+    ],
+    "tools": [
+      "HackerRank (OA + live coding)",
+      "LeetCode / NeetCode",
+      "Postman",
+      "Git + GitHub",
+      "Cloud logs / APM (CloudWatch, Datadog, Splunk-style thinking)",
+      "Trailhead (Salesforce platform + interview modules)",
+      "LangChain / LangGraph or equivalent agent stack for portfolio demos"
+    ]
+  },
+  "fastTrack": {
+    "title": "Interview sprint: 4 weeks",
+    "intro": "Use this if a recruiter call or loop could land within a week to a month. About 3–4 focused hours on weekdays, longer on weekends. Tick each domain when you can teach it out loud.",
+    "months": [
+      {
+        "id": "w1",
+        "title": "Week 1",
+        "theme": "Coding fluency + role story",
+        "rows": [
+          { "domain": "DSA", "topics": "Arrays, strings, hash maps, two pointers, sliding window, binary search. 25–30 LeetCode easy-medium. Narrate every solution.", "hours": 14 },
+          { "domain": "HackerRank habits", "topics": "Sample HackerRank test. Practise writing automated tests, comments, edge cases. No AI during timed mocks.", "hours": 4 },
+          { "domain": "Role narrative", "topics": "2-minute pitch: why Production Support & AI Automation, why Salesforce, why you. Map 5 resume bullets to JD verbs (investigate, automate, agent, root cause, measure).", "hours": 4 },
+          { "domain": "STAR bank", "topics": "Draft 5 stories: outage/debug, automation you built, cross-team collaboration, quality/testing, ambiguity. Tag each to a Salesforce value.", "hours": 5 },
+          { "domain": "AI specialty", "topics": "Refresh RAG + agent guardrails. Be ready to design a Tier-1 case classifier with human approval before actions.", "hours": 6 }
+        ]
+      },
+      {
+        "id": "w2",
+        "title": "Week 2",
+        "theme": "DSA depth + production debugging",
+        "rows": [
+          { "domain": "DSA", "topics": "Trees, graphs BFS/DFS, heaps, intervals, basic DP. 25 mediums. Always state complexity before coding.", "hours": 14 },
+          { "domain": "LLD", "topics": "Meeting scheduler, parking lot, rate limiter, notification service — classes, conflicts, concurrency notes.", "hours": 6 },
+          { "domain": "Prod support drills", "topics": "Practice: given a stack trace + log snippet, write triage steps, blast radius, mitigation, permanent fix. 5 scenarios out loud.", "hours": 6 },
+          { "domain": "SQL + APIs", "topics": "Joins, group by, window functions. Design a small REST API for case triage with idempotent updates.", "hours": 5 },
+          { "domain": "Communication", "topics": "Record a 3-minute incident update. Record a 5-minute project deep dive. Rewatch and cut filler words.", "hours": 4 }
+        ]
+      },
+      {
+        "id": "w3",
+        "title": "Week 3",
+        "theme": "System design + AI automation design",
+        "rows": [
+          { "domain": "DSA", "topics": "Mixed medium set, 2 timed 45-min mocks. Company-tagged Salesforce / FAANG mediums.", "hours": 12 },
+          { "domain": "HLD", "topics": "Design: support ticket system, log ingestion pipeline, multi-tenant knowledge RAG, flash-sale style consistency trade-offs.", "hours": 8 },
+          { "domain": "AI automation design", "topics": "End-to-end: case intake → classification → RAG over runbooks → suggested reply / access workflow → audit log → metrics (MTTR, deflection).", "hours": 6 },
+          { "domain": "Salesforce platform", "topics": "Trailhead: objects, SOQL basics, Apex trigger pattern, permission sets. Enough to talk intelligently, not claim mastery.", "hours": 5 },
+          { "domain": "Values & Ohana", "topics": "Memorise Trust → Customer Success → Innovation → Equality → Sustainability. Practise one story per value.", "hours": 3 }
+        ]
+      },
+      {
+        "id": "w4",
+        "title": "Week 4",
+        "theme": "Full loop simulation",
+        "rows": [
+          { "domain": "DSA", "topics": "Daily 1–2 problems under timer. Focus weak patterns only.", "hours": 10 },
+          { "domain": "Mock loop", "topics": "Simulate: HM chat, HackerRank-style take-home, live coding, LLD, prod scenario, behavioural. Score yourself harshly.", "hours": 10 },
+          { "domain": "Resume & LinkedIn", "topics": "Tighten impact metrics. Align titles/dates. Prepare questions for each interviewer type.", "hours": 4 },
+          { "domain": "Portfolio demo", "topics": "One live demo: AI support agent or automation tool. 5-minute script with problem → approach → guardrails → impact.", "hours": 6 },
+          { "domain": "Rest & logistics", "topics": "Camera-on setup, quiet room, backup network. Sleep. Tell recruiter about competing offers early if any.", "hours": 2 }
+        ]
+      }
+    ]
+  },
+  "beginnerPath": {
+    "title": "Deep prep: 8 weeks",
+    "intro": "If your loop is months away, use this. Same destination as the 4-week sprint, with more reps and a stronger portfolio. Skip Phase 1 if you already code daily.",
+    "phases": [
+      {
+        "id": "p1",
+        "months": "Weeks 1–2",
+        "title": "Foundations & story",
+        "goal": "Clean coding baseline and a credible JR365887 narrative.",
+        "items": [
+          "Pick one interview language and stick to it",
+          "50 easy-medium LeetCode across arrays/strings/hashing",
+          "Write your role pitch and 5 STAR stories",
+          "Read the official Salesforce Engineering interview Trailhead module"
+        ]
+      },
+      {
+        "id": "p2",
+        "months": "Weeks 3–4",
+        "title": "DSA + LLD",
+        "goal": "Pass a HackerRank-style assessment with tests and readable code.",
+        "items": [
+          "Trees, graphs, heaps, DP basics — 40 mediums",
+          "Weekly timed HackerRank / LeetCode contest",
+          "3 LLD designs on paper with class diagrams",
+          "Add unit tests to every practice solution habitually"
+        ]
+      },
+      {
+        "id": "p3",
+        "months": "Weeks 5–6",
+        "title": "Production + AI specialty",
+        "goal": "Sound like someone who has owned an incident and automated the boring path.",
+        "items": [
+          "Build a mini AI case-triage agent with RAG over a fake runbook corpus",
+          "Add guardrails: allow-list of actions, audit log, human approval for side effects",
+          "Practice 10 production debugging oral drills",
+          "Learn Salesforce object model + Apex trigger basics on Trailhead"
+        ]
+      },
+      {
+        "id": "p4",
+        "months": "Weeks 7–8",
+        "title": "Interview polish",
+        "goal": "Full-loop readiness and calm communication.",
+        "items": [
+          "2–3 mock interviews per week (coding + behavioural)",
+          "One HLD for a support/automation system per week",
+          "Values-aligned STAR polish; record and self-review",
+          "Questions bank for recruiter, HM, peer eng, director"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "intro": "For this JD, portfolio projects should scream: I debug production pain and I automate it safely with software and AI.",
+    "items": [
+      {
+        "id": "case-agent",
+        "title": "Tier-1/2 AI case triage agent",
+        "text": "Ingest sample tickets, classify severity/type, retrieve runbook snippets, draft a reply. Require human approval before any write action. Log every decision."
+      },
+      {
+        "id": "log-analyst",
+        "title": "Log anomaly helper",
+        "text": "Parse structured logs, cluster recurring errors, open a summary with likely root cause links. Show before/after time-to-triage."
+      },
+      {
+        "id": "access-bot",
+        "title": "Automated access workflow",
+        "text": "Request → policy check → approval → provision → audit trail. Emphasise least privilege and rollback."
+      },
+      {
+        "id": "knowledge-rag",
+        "title": "Technical knowledge RAG",
+        "text": "Index docs/runbooks, answer with citations, refuse when confidence is low. Add a simple eval set."
+      },
+      {
+        "id": "oncall-dashboard",
+        "title": "On-call reliability dashboard",
+        "text": "Fake metrics: MTTR, repeat incidents, alert noise. Show how automation reduced toil."
+      }
+    ],
+    "resources": [
+      { "label": "Official process", "text": "Trailhead: Strategies for Successful Software Engineer Interviews" },
+      { "label": "DSA", "text": "NeetCode 150, LeetCode mediums, HackerRank sample tests" },
+      { "label": "LLD", "text": "Meeting scheduler / parking lot style designs; practise patterns and edge cases" },
+      { "label": "System design", "text": "ByteByteGo, Hello Interview — focus on reliability and multi-tenancy" },
+      { "label": "Prod support", "text": "Google SRE book (selected chapters), your own postmortem write-ups" },
+      { "label": "AI agents", "text": "Anthropic Building Effective Agents, LangGraph docs, MCP intro" },
+      { "label": "Salesforce platform", "text": "Trailhead Admin beginner + Apex basics" },
+      { "label": "Communication", "text": "STAR method; Pyramid Principle for status updates" }
+    ]
+  },
+  "interview": {
+    "intro": "Salesforce Engineering uses five milestones. Exact sequencing can vary by team — your recruiter confirms. For Production Support & AI Automation, expect the standard coding loop plus scenario questions on incidents, logs, automation and safe AI actions. Camera on for virtual rounds. Final on-site is typically in-person (travel coordinated).",
+    "rounds": [
+      {
+        "id": "r1",
+        "no": 1,
+        "name": "Recruiter connect",
+        "duration": "20–30 min",
+        "tests": "Background, interest, logistics",
+        "details": [
+          "Conversational, not deeply technical.",
+          "Why Salesforce Engineering, why this Academy / support+AI role.",
+          "Location, notice period, work authorisation, competing timelines.",
+          "They outline the milestone sequence for your loop."
+        ]
+      },
+      {
+        "id": "r2",
+        "no": 2,
+        "name": "Hiring manager connect",
+        "duration": "30–45 min",
+        "tests": "Credibility, collaboration, fit",
+        "details": [
+          "Still mostly conversational; deeper on engineering judgement.",
+          "Expect project deep dive: decisions and why, not just features.",
+          "For this team flavour: on-call, production pressure, how you communicate during incidents.",
+          "Bring 2–3 questions about the stack, rotation model, and how AI automation success is measured.",
+          "Honesty about gaps is valued — lifelong learner signal."
+        ]
+      },
+      {
+        "id": "r3",
+        "no": 3,
+        "name": "HackerRank take-home",
+        "duration": "Timed async (invite expires ~7 days)",
+        "tests": "Correctness, scale awareness, design, code quality, tests",
+        "details": [
+          "Proctor Mode is typically on (tab switches / copy-paste monitored). AI tools are not allowed during the test.",
+          "Evaluated like production code: correctness, efficiency, OO design, readability, automated tests.",
+          "Read fully, state assumptions in notes, run platform tests, submit before timer ends.",
+          "Practise a sample HackerRank test beforehand."
+        ]
+      },
+      {
+        "id": "r4",
+        "no": 4,
+        "name": "Virtual technical loop",
+        "duration": "Multiple live sessions",
+        "tests": "DSA, coding, LLD, sometimes HLD, quality mindset",
+        "details": [
+          "Live coding often on HackerRank Interviews — think out loud.",
+          "Competencies: Algorithms & DS, Coding Proficiency, Problem-Solving/LLD, System Design/HLD (role-dependent), Quality & Test Automation.",
+          "Recent MTS reports: medium (sometimes hard) DSA, edge-case pressure, LLD like meeting scheduler / parking lot.",
+          "Salesforce also expects baseline AI literacy (LLMs, RAG, MCP, prompting) across engineering — stronger for this JD."
+        ]
+      },
+      {
+        "id": "r5",
+        "no": 5,
+        "name": "Role specialty: production + AI",
+        "duration": "Often woven into HM / loop / on-site",
+        "tests": "Debugging, incidents, automation judgement, guardrails",
+        "details": [
+          "Walk through a production issue from symptoms to root cause.",
+          "How you would automate a recurring Tier-1 case safely.",
+          "Design an agent that suggests actions but cannot bypass access control.",
+          "Metrics: deflection rate, MTTR, repeat-incident rate, toil hours saved."
+        ]
+      },
+      {
+        "id": "r6",
+        "no": 6,
+        "name": "Behavioural / values",
+        "duration": "30–45 min",
+        "tests": "How you deliver, connect, grow + Salesforce values",
+        "details": [
+          "Use STAR only for behavioural questions.",
+          "Story buckets: hard technical challenge, innovation, cross-team collaboration, quality/ops rigor, resilience/ambiguity.",
+          "Map stories to Trust (security, transparency), Customer Success, Innovation, Equality, Sustainability.",
+          "Ohana culture: team win + clear personal ownership."
+        ]
+      },
+      {
+        "id": "r7",
+        "no": 7,
+        "name": "Final on-site",
+        "duration": "Half day in-person",
+        "tests": "Confirm technical + culture signals",
+        "details": [
+          "Mix of technical and behavioural with multiple engineers.",
+          "Live coding / whiteboarding possible.",
+          "Treat Q&A as part of the interview — specific questions per person.",
+          "Be authentic; polished theatre scores worse than clear thinking."
+        ]
+      }
+    ],
+    "tips": [
+      {
+        "title": "Coding / HackerRank",
+        "items": [
+          "Restate the problem; confirm inputs/outputs and constraints.",
+          "Brute force → optimise. Working correct beats unfinished clever.",
+          "State time/space proactively. Write tests and edge cases.",
+          "During take-home: comments, structure, automated tests — they grade like production.",
+          "Use AI only for prep. Never during proctored assessments."
+        ]
+      },
+      {
+        "title": "Production support scenarios",
+        "items": [
+          "Structure: detect → mitigate customer impact → diagnose → fix → prevent.",
+          "Always mention communication cadence and who you notify.",
+          "Separate symptom fixes from root-cause fixes.",
+          "End with a metric or follow-up (alert, test, runbook, automation)."
+        ]
+      },
+      {
+        "title": "AI automation answers",
+        "items": [
+          "Lead with the human workflow you are improving, not the model name.",
+          "Classification and retrieval first; side effects only behind policy + approval.",
+          "Talk failure modes: hallucination, wrong ticket type, privilege escalation.",
+          "Define evals and audit logs as part of the design, not an afterthought."
+        ]
+      },
+      {
+        "title": "Behavioural & communication",
+        "items": [
+          "90–120 second STAR answers. Result with a number when possible.",
+          "Say 'we' for the team outcome, then 'I owned X'.",
+          "Prepare 'why Salesforce' beyond brand: Trust, Agentforce, multi-tenant scale, customer impact.",
+          "Practise pausing instead of filler words — especially under incident questions."
+        ]
+      }
+    ],
+    "mistakes": [
+      "Silent coding — they cannot score thinking they cannot hear.",
+      "Treating support as 'just tickets' instead of engineering leverage via automation.",
+      "Designing an AI agent with unrestricted write access and no audit trail.",
+      "Memorising values as slogans without a real story attached.",
+      "Claiming deep Apex/Salesforce expertise you cannot defend — better: honest learning plan.",
+      "Using AI during the proctored HackerRank assessment.",
+      "No questions for the interviewer — signals low curiosity."
+    ],
+    "proTip": "For this JD, the winning arc in every technical answer is: customer impact → evidence from logs/metrics → durable fix or automation → how you know it worked. That is exactly how the Academy measures success."
+  },
+  "questionBank": {
+    "intro": "Practise out loud. Cover every category at least once a week. Prefer your real stories over invented ones.",
+    "categories": [
+      {
+        "id": "recruiter",
+        "label": "Recruiter & HM",
+        "items": [
+          { "q": "Why Salesforce, and why this Production Support & AI Automation role?", "hint": "Tie Trust + customer impact + your automation/AI projects. Avoid generic 'dream company'." },
+          { "q": "Walk me through a project on your resume end to end.", "hint": "Problem, constraints, your decisions, trade-offs, measurable result, what you would change." },
+          { "q": "What does good on-call look like to you?", "hint": "Prepared runbooks, calm comms, mitigate first, blameless learning, reduce toil." },
+          { "q": "Where do you want to grow in 18 months?", "hint": "Academy → stronger ownership of automation/platform → path toward product engineering." },
+          { "q": "Tell me about a time you disagreed with a teammate.", "hint": "Data + customer impact; how you resolved; what changed." }
+        ]
+      },
+      {
+        "id": "dsa",
+        "label": "DSA / coding",
+        "items": [
+          { "q": "Sort names that include Roman numerals (name, then numeral value).", "hint": "Parse Roman correctly; stable comparator; tests for subtraction rules." },
+          { "q": "Longest streak of days where all microservice health checks passed.", "hint": "Per-day aggregate then streak scan; clarify input shape." },
+          { "q": "Meeting rooms / interval scheduling variants.", "hint": "Sort by start; min-heaps for rooms; conflict detection for LLD crossover." },
+          { "q": "Partition array to minimise absolute sum difference.", "hint": "Meet-in-the-middle or DP depending on constraints — ask constraints first." },
+          { "q": "Rate limiter for an API (token bucket / sliding window).", "hint": "Correctness under concurrency; memory; multi-tenant keys." },
+          { "q": "String / substring problems with non-overlapping constraints.", "hint": "Greedy vs DP; prove why your choice works." }
+        ]
+      },
+      {
+        "id": "lld",
+        "label": "Low-level design",
+        "items": [
+          { "q": "Design a Meeting Scheduler (objects, conflicts, time zones).", "hint": "Entities, APIs, conflict algorithm, concurrency, notifications." },
+          { "q": "Design a Parking Lot.", "hint": "Spot types, allocation strategy, fees, thread safety, extensibility." },
+          { "q": "Design a Case / Ticket service for Tier-1 support.", "hint": "States, assignment, SLA timers, audit history, idempotent updates." },
+          { "q": "Design an Access Request workflow engine.", "hint": "Policies, approvals, provisioning adapters, rollback, audit log." }
+        ]
+      },
+      {
+        "id": "hld",
+        "label": "System design",
+        "items": [
+          { "q": "Design a multi-tenant knowledge RAG for support agents.", "hint": "Tenancy isolation, ingest, retrieval, citations, evals, abuse/malware uploads." },
+          { "q": "Design a log ingestion and alert pipeline.", "hint": "Collectors, buffering, indexing, alert rules, noise control, cost." },
+          { "q": "Design a flash-sale style system with consistency over availability.", "hint": "Clarify priorities; inventory correctness; hot keys; failure modes." },
+          { "q": "Design automated Tier-1 case deflection with AI.", "hint": "Human-in-the-loop, metrics, trust/safety, escalation paths." }
+        ]
+      },
+      {
+        "id": "prod",
+        "label": "Production support",
+        "items": [
+          { "q": "Customers report intermittent 500s on one API. What do you do in the first 30 minutes?", "hint": "Scope blast radius, check deploys/deps, mitigate (rollback/feature flag), communicate, capture evidence." },
+          { "q": "How do you read a stack trace and find the owning service?", "hint": "Top frames vs root cause frames; correlation IDs; recent changes." },
+          { "q": "An alert fires every night and is always ignored. What do you do?", "hint": "Fix signal quality; delete or retune; toil is an engineering bug." },
+          { "q": "Describe a postmortem you would write after a Sev-2.", "hint": "Timeline, impact, root cause, contributing factors, action items with owners." },
+          { "q": "How do you decide workaround now vs fix today vs fix this sprint?", "hint": "Customer harm, risk, recurrence probability, blast radius of the change." }
+        ]
+      },
+      {
+        "id": "ai",
+        "label": "AI automation",
+        "items": [
+          { "q": "Design an agent that classifies support cases and suggests replies.", "hint": "Labels, confidence thresholds, RAG citations, human approve send." },
+          { "q": "When should an AI system be allowed to execute an action automatically?", "hint": "Reversible, low-risk, policy-checked, audited; else human gate." },
+          { "q": "How would you evaluate that your case classifier is safe to ship?", "hint": "Golden set, confusion matrix by severity, shadow mode, canary, rollback." },
+          { "q": "How do you prevent an agent from escalating privileges?", "hint": "Separate identity, least privilege, allow-listed tools, server-side authz — never trust the model." },
+          { "q": "Explain RAG vs fine-tuning for runbook Q&A.", "hint": "Changing docs → RAG; stable style/format → maybe tune; start RAG." }
+        ]
+      },
+      {
+        "id": "backend",
+        "label": "Backend & APIs",
+        "items": [
+          { "q": "How do you make a webhook handler idempotent?", "hint": "Idempotency keys, dedupe store, safe retries." },
+          { "q": "SQL: top workflows by p95 latency per tenant last 7 days.", "hint": "Percentile approach; indexes; exclude test tenants." },
+          { "q": "Explain transactions and what breaks under concurrent updates to the same case.", "hint": "Isolation levels, optimistic locking, version fields." },
+          { "q": "How do you roll out a risky fix safely?", "hint": "Feature flags, canary, metrics, auto rollback criteria." }
+        ]
+      },
+      {
+        "id": "sfplatform",
+        "label": "Salesforce platform basics",
+        "items": [
+          { "q": "What is a Salesforce object and how do relationships work?", "hint": "Standard vs custom; lookup vs master-detail; sharing implications." },
+          { "q": "What is an Apex trigger and when would you avoid heavy logic in it?", "hint": "Bulkification, recursion, move complex logic to classes/services." },
+          { "q": "What are permission sets vs profiles (high level)?", "hint": "Least privilege; assignable permissions without changing core profile." },
+          { "q": "Why does multi-tenancy make Trust Salesforce's #1 value?", "hint": "Shared infrastructure; isolation bugs become customer-trust incidents." }
+        ]
+      },
+      {
+        "id": "behavioral",
+        "label": "Behavioural & values",
+        "items": [
+          { "q": "Tell me about a time you built trust with a customer or stakeholder (Trust).", "hint": "Transparency about risk, delivered what you promised, protected data/access." },
+          { "q": "Describe a time you put customer success over a convenient shortcut.", "hint": "Extra validation, clearer comms, fixed root cause." },
+          { "q": "Tell me about an innovation you pushed — even a small automation.", "hint": "Idea → buy-in → ship → measured toil reduction." },
+          { "q": "Give an example of including someone or making work fairer (Equality).", "hint": "Mentoring, accessible docs, credit sharing, interrupting bias in a meeting." },
+          { "q": "Tell me about working through ambiguity with incomplete requirements.", "hint": "Clarify goals, time-box discovery, ship a thin slice, validate." },
+          { "q": "Describe a production incident you helped resolve under pressure.", "hint": "Your role, communication, mitigation, prevention." }
+        ]
+      },
+      {
+        "id": "communication",
+        "label": "Communication drills",
+        "items": [
+          { "q": "Give a 60-second incident status to a non-technical stakeholder.", "hint": "Impact, what we know, what we're doing, next update time. No jargon." },
+          { "q": "Explain your AI project to a hiring manager in 2 minutes.", "hint": "User pain → system sketch → guardrails → metric." },
+          { "q": "You are stuck in a coding interview. What do you say?", "hint": "Name the blocker, list options, pick one, ask a focused clarifying question." },
+          { "q": "Ask three strong questions at the end of a loop interview.", "hint": "Team's top reliability risks; how AI automation success is measured; mentoring model in the Academy." }
+        ]
+      }
+    ]
+  },
+  "communication": {
+    "title": "Communication system for this interview",
+    "principles": [
+      "Lead with customer / business impact, then technical detail.",
+      "Narrate decisions and trade-offs; silence loses points.",
+      "Prefer structured frameworks: STAR (behavioural), MITIGATE→DIAGNOSE→PREVENT (incidents), REQUIREMENTS→DESIGN→TRADEOFFS (design).",
+      "Short sentences under stress. Numbers beat adjectives.",
+      "Camera on, eye contact with camera, notes allowed if you still engage."
+    ],
+    "pitch": {
+      "label": "Fill-in role pitch (edit to your voice)",
+      "text": "I am a software engineer who enjoys owning messy production problems end to end. I debug with logs and data, then I remove the repeat work with scripts and AI-assisted workflows — with guardrails so actions stay safe. Salesforce's Production Support & AI Automation Academy is the intersection of reliability engineering and applied AI that I have been building toward with my backend and agent projects. I want to learn at Salesforce scale under strong mentoring, measure impact in MTTR and toil reduced, and grow into deeper product engineering."
+    },
+    "starTemplate": [
+      "Situation: one sentence context (system, customer, severity).",
+      "Task: what you specifically owned.",
+      "Action: 3–5 concrete steps (tools, decisions, trade-offs).",
+      "Result: metric or clear outcome + what you learned / prevented next time."
+    ]
+  },
+  "takeaways": [
+    "This role hires software engineers who can ship — and who treat production pain as product input for automation.",
+    "Salesforce loops reward clear thinking: coding quality, tests, trade-offs, and values-aligned stories.",
+    "AI answers without guardrails, evals and audit logs will fail this JD's bar.",
+    "Your referral got you In Consideration; preparation decides whether the loop converts.",
+    "Practise out loud every day — even 45 minutes of DSA + one oral scenario compounds."
+  ]
+}

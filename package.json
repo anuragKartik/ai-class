@@ -2,7 +2,7 @@
   "name": "ai-guide",
   "version": "1.0.0",
   "private": true,
-  "description": "Two-track learning hub: AI Engineer (LangChain, LangGraph, RAG, agents) and Forward Deployed Engineer (FDE) prep.",
+  "description": "Three-track learning hub: AI Engineer, Forward Deployed Engineer (FDE), and Salesforce MTS interview prep.",
   "type": "module",
   "scripts": {
     "setup": "npm install && npm install --prefix client",

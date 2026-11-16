@@ -6,6 +6,9 @@ import AiRoadmap from './views/AiRoadmap.jsx';
 import Plan100 from './views/Plan100.jsx';
 import FdeOverview from './views/FdeOverview.jsx';
 import FdePlan, { FdeInterview } from './views/FdePlan.jsx';
+import SalesforceOverview from './views/SalesforceOverview.jsx';
+import SalesforcePlan, { SalesforceInterview } from './views/SalesforcePlan.jsx';
+import SalesforceBank from './views/SalesforceBank.jsx';
 import Library, { Reading } from './views/Library.jsx';
 import Growth from './views/Growth.jsx';
 import Mocks from './views/Mocks.jsx';
@@ -41,6 +44,19 @@ const COURSES = [
       { id: 'overview', label: 'What is an FDE?' },
       { id: 'plan', label: 'Study plan' },
       { id: 'interview', label: 'Interview prep' },
+      { id: 'library', label: 'Video classroom' },
+      { id: 'reading', label: 'Reading list' },
+    ],
+  },
+  {
+    id: 'salesforce',
+    label: 'Salesforce Interview',
+    kicker: 'Course 03',
+    pages: [
+      { id: 'overview', label: 'Role & overview' },
+      { id: 'plan', label: 'Study plan' },
+      { id: 'interview', label: 'Interview rounds' },
+      { id: 'bank', label: 'Question bank' },
       { id: 'library', label: 'Video classroom' },
       { id: 'reading', label: 'Reading list' },
     ],
@@ -103,7 +119,7 @@ function Shell() {
           <span className="mark">A</span>
           <div>
             <strong>Anurag AI Classes</strong>
-            <small>Two courses. One classroom.</small>
+            <small>Three courses. One classroom.</small>
           </div>
         </div>
         <div className="sidebar-scroll">
@@ -207,6 +223,14 @@ function CoursePage({ courseId, page, data, career, sessions, setSessions, mockA
     if (page === 'plan') return <FdePlan content={data.content} />;
     if (page === 'interview') return <FdeInterview content={data.content} />;
     if (page === 'library') return <Library data={data} track="fde" />;
+    if (page === 'reading') return <Reading data={data} />;
+  }
+  if (courseId === 'salesforce' && data) {
+    if (page === 'overview') return <SalesforceOverview content={data.content} />;
+    if (page === 'plan') return <SalesforcePlan content={data.content} />;
+    if (page === 'interview') return <SalesforceInterview content={data.content} />;
+    if (page === 'bank') return <SalesforceBank content={data.content} />;
+    if (page === 'library') return <Library data={data} track="salesforce" />;
     if (page === 'reading') return <Reading data={data} />;
   }
   return <p className="state">Choose a page from the left.</p>;
