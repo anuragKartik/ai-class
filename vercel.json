@@ -1,5 +1,5 @@
 {
-  "installCommand": "bash scripts/vercel-install.sh",
+  "installCommand": "npm install && npm install --prefix client",
   "buildCommand": "npm run build",
   "outputDirectory": "client/dist",
   "functions": {

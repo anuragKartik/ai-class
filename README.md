@@ -18,8 +18,10 @@ npm run dev
 The app is a Vite frontend plus serverless `/api/*` routes (same handlers as the Express server).
 
 1. Push to GitHub (`anuragKartik/ai-class`)
-2. Vercel → Project Settings → General → **Root Directory**: leave **empty** (repo root).  
-   Do **not** set it to `client` — that breaks install (`client/client/package.json`) and hides `/api`.
-3. Build settings come from `vercel.json`. Clear any override Install/Build commands in the Vercel UI so the file wins.
+2. Vercel → **Settings → Build and Deployment** → **Root Directory**:
+   - Click Edit → clear the value (must be empty / repo root)
+   - Do **not** use `client` — that causes `client/client/package.json` and hides `/api`
+3. In the same page, clear any custom Install/Build Command overrides so `vercel.json` is used
 4. Redeploy; then `/api/career` and `/api/tracks/ai` should return JSON
+
 
