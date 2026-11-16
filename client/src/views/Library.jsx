@@ -1,11 +1,13 @@
 import { useMemo, useState } from 'react';
 import { ArticleCard, ShortCard, VideoCard } from '../components.jsx';
 import { Chip, PageTitle } from '../ui.jsx';
+import ShortsReel from './ShortsReel.jsx';
 
 export default function Library({ data, track }) {
   const [topic, setTopic] = useState('all');
   const [query, setQuery] = useState('');
   const [sort, setSort] = useState('relevance');
+  const [reelIndex, setReelIndex] = useState(null);
   const q = query.trim().toLowerCase();
 
   const filtered = useMemo(() => {
@@ -63,19 +65,38 @@ export default function Library({ data, track }) {
       </section>
 
       <section className="block">
-        <h3 className="block-title">
-          Shorts <span className="count">{filtered.shorts.length}</span>
-        </h3>
+        <div className="shorts-head">
+          <h3 className="block-title">
+            Shorts <span className="count">{filtered.shorts.length}</span>
+          </h3>
+          {filtered.shorts.length > 0 && (
+            <button type="button" className="btn small reel-launch" onClick={() => setReelIndex(0)}>
+              Watch as Reels →
+            </button>
+          )}
+        </div>
+        <p className="lede shorts-lede">
+          Open the Reels feed and swipe up for the next clip — same habit as Instagram Reels, but every short is study material.
+        </p>
         {filtered.shorts.length === 0 ? (
           <p className="empty">No Shorts match this filter.</p>
         ) : (
           <div className="shorts">
-            {filtered.shorts.map((s) => (
-              <ShortCard key={s.id} s={s} track={track} />
+            {filtered.shorts.map((s, i) => (
+              <ShortCard key={s.id} s={s} track={track} onOpen={() => setReelIndex(i)} />
             ))}
           </div>
         )}
       </section>
+
+      {reelIndex != null && (
+        <ShortsReel
+          shorts={filtered.shorts}
+          track={track}
+          startIndex={reelIndex}
+          onClose={() => setReelIndex(null)}
+        />
+      )}
     </>
   );
 }

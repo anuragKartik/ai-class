@@ -46,7 +46,7 @@ export function VideoCard({ v, track }) {
   );
 }
 
-export function ShortCard({ s, track }) {
+export function ShortCard({ s, track, onOpen }) {
   const play = usePlayer();
   const { done, toggle } = useProgress();
   const key = `${track}.vid.${s.id}`;
@@ -55,6 +55,10 @@ export function ShortCard({ s, track }) {
     <button
       className={`short ${watched ? 'is-done' : ''}`}
       onClick={() => {
+        if (onOpen) {
+          onOpen();
+          return;
+        }
         play(s);
         if (!watched) toggle(key);
       }}
@@ -62,6 +66,9 @@ export function ShortCard({ s, track }) {
     >
       <img src={s.thumbnail} alt="" loading="lazy" />
       <span className="short-shade" />
+      <span className="short-play" aria-hidden="true">
+        ▶
+      </span>
       <span className="short-title">{s.title}</span>
       <span className="short-views">{formatViews(s.views)}</span>
     </button>
