@@ -1,5 +1,28 @@
 import { useEffect, useState } from 'react';
 
+async function readApiJson(response) {
+  const text = await response.text();
+  let body = null;
+  if (text) {
+    try {
+      body = JSON.parse(text);
+    } catch {
+      body = null;
+    }
+  }
+  if (!response.ok) {
+    const message =
+      (body && body.error) ||
+      (text && text.slice(0, 200)) ||
+      `Request failed (${response.status})`;
+    throw new Error(`API error (${response.status}): ${message}`);
+  }
+  if (body === null) {
+    throw new Error(`API error (${response.status}): expected JSON, got non-JSON response`);
+  }
+  return body;
+}
+
 export function useLocalStorage(key, initial) {
   const [value, setValue] = useState(() => {
     try {
@@ -29,11 +52,7 @@ export function useTrackData(trackId) {
     let cancelled = false;
     setState((s) => ({ ...s, loading: true, error: null }));
     fetch(`/api/tracks/${trackId}`)
-      .then(async (r) => {
-        const body = await r.json();
-        if (!r.ok) throw new Error(body.error || `Request failed (${r.status})`);
-        return body;
-      })
+      .then(readApiJson)
       .then((data) => !cancelled && setState({ loading: false, error: null, data, id: trackId }))
       .catch((error) => !cancelled && setState({ loading: false, error: error.message, data: null, id: trackId }));
     return () => {
@@ -50,11 +69,7 @@ export function useCareer() {
   useEffect(() => {
     let cancelled = false;
     fetch('/api/career')
-      .then(async (r) => {
-        const body = await r.json();
-        if (!r.ok) throw new Error(body.error || `Request failed (${r.status})`);
-        return body;
-      })
+      .then(readApiJson)
       .then((data) => !cancelled && setState({ loading: false, error: null, data }))
       .catch((error) => !cancelled && setState({ loading: false, error: error.message, data: null }));
     return () => {
