@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 async function readApiJson(response) {
   const text = await response.text();
@@ -23,22 +23,42 @@ async function readApiJson(response) {
   return body;
 }
 
+function readLocal(key, initial) {
+  try {
+    const raw = localStorage.getItem(key);
+    return raw ? JSON.parse(raw) : initial;
+  } catch {
+    return initial;
+  }
+}
+
+/** Persists JSON in localStorage. Reloads when `key` changes (e.g. per-account data). */
 export function useLocalStorage(key, initial) {
-  const [value, setValue] = useState(() => {
-    try {
-      const raw = localStorage.getItem(key);
-      return raw ? JSON.parse(raw) : initial;
-    } catch {
-      return initial;
-    }
-  });
+  const [value, setValue] = useState(() => readLocal(key, initial));
+  const skipWrite = useRef(false);
+  const prevKey = useRef(key);
+  const initialRef = useRef(initial);
+  initialRef.current = initial;
+
   useEffect(() => {
+    if (prevKey.current === key) return;
+    prevKey.current = key;
+    skipWrite.current = true;
+    setValue(readLocal(key, initialRef.current));
+  }, [key]);
+
+  useEffect(() => {
+    if (skipWrite.current) {
+      skipWrite.current = false;
+      return;
+    }
     try {
       localStorage.setItem(key, JSON.stringify(value));
     } catch {
       /* storage full or disabled - ignore */
     }
   }, [key, value]);
+
   return [value, setValue];
 }
 

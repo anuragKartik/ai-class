@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react';
+import { useAuth } from '../auth.jsx';
 import { useLocalStorage } from '../hooks.js';
 import { countDone, usePlayer, useProgress } from '../context.jsx';
 import { Check, Chip, Meter, PageTitle, Segmented } from '../ui.jsx';
@@ -68,8 +69,9 @@ function DayCard({ d, level, open, onToggleOpen }) {
 }
 
 export default function Plan100({ plan }) {
+  const { dataKeys } = useAuth();
   const { done } = useProgress();
-  const [level, setLevel] = useLocalStorage('anurag-ai-classes.level', 'beginner');
+  const [level, setLevel] = useLocalStorage(dataKeys.level, 'beginner');
   const [openDays, setOpenDays] = useState({});
 
   const phaseProgress = (p) => p.days.filter((d) => done[`ai.day.${d.day}`]).length;

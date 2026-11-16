@@ -1,11 +1,14 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react';
+import { useAuth } from './auth.jsx';
 import { useLocalStorage } from './hooks.js';
 
-/* ---------- Progress (checkboxes everywhere, saved in this browser) ---------- */
+/* ---------- Progress (checkboxes everywhere, saved per account on this device) ---------- */
 const ProgressCtx = createContext(null);
 
 export function ProgressProvider({ children }) {
-  const [done, setDone] = useLocalStorage('anurag-ai-classes.progress.v1', {});
+  const { dataKeys } = useAuth();
+  const storageKey = dataKeys?.progress || 'anurag-ai-classes.progress.guest';
+  const [done, setDone] = useLocalStorage(storageKey, {});
   const toggle = useCallback(
     (key) =>
       setDone((m) => {

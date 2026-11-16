@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
+import { AuthProvider, LoginScreen, useAuth } from './auth.jsx';
 import { ProgressProvider, PlayerProvider, useProgress } from './context.jsx';
 import { useCareer, useLocalStorage, useTrackData } from './hooks.js';
 import AiRoadmap from './views/AiRoadmap.jsx';
@@ -48,6 +49,16 @@ const COURSES = [
 
 export default function App() {
   return (
+    <AuthProvider>
+      <Gate />
+    </AuthProvider>
+  );
+}
+
+function Gate() {
+  const { isLoggedIn } = useAuth();
+  if (!isLoggedIn) return <LoginScreen />;
+  return (
     <ProgressProvider>
       <PlayerProvider>
         <Shell />
@@ -57,11 +68,12 @@ export default function App() {
 }
 
 function Shell() {
+  const { user, logout, dataKeys } = useAuth();
   const [theme, setTheme] = useLocalStorage('anurag-ai-classes.theme', 'light');
   const [courseId, setCourseId] = useLocalStorage('anurag-ai-classes.course', 'desk');
   const [page, setPage] = useLocalStorage('anurag-ai-classes.page', 'growth');
   const [menuOpen, setMenuOpen] = useState(false);
-  const [sessions, setSessions] = useLocalStorage('anurag-ai-classes.mocks.v1', []);
+  const [sessions, setSessions] = useLocalStorage(dataKeys.mocks, []);
   const career = useCareer();
   const course = COURSES.find((c) => c.id === courseId) || COURSES[0];
   const currentPage = course.pages.some((p) => p.id === page) ? page : course.pages[0].id;
@@ -113,6 +125,13 @@ function Shell() {
         </div>
         <div className="sidebar-foot">
           <SidebarProgress />
+          <div className="account-box">
+            <p className="account-name">{user.name}</p>
+            <p className="account-email">{user.email}</p>
+            <button type="button" className="logout-btn" onClick={logout}>
+              Log out
+            </button>
+          </div>
           <div className="theme-switch" role="group" aria-label="Colour theme">
             <button className={theme === 'light' ? 'active' : ''} onClick={() => setTheme('light')}>
               Light

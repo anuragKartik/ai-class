@@ -1,11 +1,13 @@
 import { useState } from 'react';
+import { useAuth } from '../auth.jsx';
 import { useLocalStorage } from '../hooks.js';
 import { PageTitle } from '../ui.jsx';
 
 const STATUSES = ['Wishlist', 'Applied', 'Referral asked', 'Interview', 'Offer', 'Rejected'];
 
 export default function Jobs({ career }) {
-  const [apps, setApps] = useLocalStorage('anurag-ai-classes.apps.v1', []);
+  const { dataKeys } = useAuth();
+  const [apps, setApps] = useLocalStorage(dataKeys.apps, []);
   const [form, setForm] = useState({ company: '', role: '', url: '', status: 'Wishlist' });
   const [copied, setCopied] = useState('');
 
